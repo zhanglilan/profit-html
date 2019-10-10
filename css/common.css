@@ -207,13 +207,29 @@ ol {
 .c-gray{
 	color: #999;
 }
+.c-pink{
+	color: #F74B8C;
+}
 
 .line-l-r{
 	border-left:1px solid #EEEEEE;
 	border-right:1px solid #EEEEEE;
 }
+.line-l-r-red{
+	border-left:1px solid #F74B8C;
+	border-right:1px solid #F74B8C;
+}
 .text-center{
 	text-align: center;
+}
+.text-right{
+	text-align: right;
+}
+.show{
+	display: block;
+}
+.hide{
+	display: none;
 }
 .width-100 {
 	width: 100%;
@@ -221,6 +237,9 @@ ol {
 
 .font12 {
 	font-size: 12px;
+}
+.font16 {
+	font-size: 16px;
 }
 
 .font18 {
@@ -235,11 +254,6 @@ ol {
 	font-size: 24px;
 }
 
-.c-gray {
-	color: #999;
-}
-
-
 .p-15{
 	padding: 15px;
 }
@@ -251,4 +265,13 @@ ol {
 }
 .m-b-10 {
 	margin-bottom: 10px;
+}
+.m-r-10{
+	margin-right: 10px;
+}
+.m-l-10{
+	margin-left: 10px;
+}
+.m-t-15{
+	margin-top: 15px;
 }

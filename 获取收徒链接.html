@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <link rel="stylesheet" href="css/common.css" />
+	    <link rel="stylesheet" href="css/mian.css" />
+	    <title>app</title>
+	</head>
+	<body>
+	<section>
+		<section class="top df jsb jc ac">
+			<a href="javascript:history.go(-1);">
+				<div class="df ac"><img class="arrowImg" src="img/arrow.png"/><p class="font16">获取收徒链接</p></div>
+			</a>
+		</section>
+		<section class="top-header">
+			<div class="linkText">
+				<p>每天挂着微信 加几个群就能赚钱<br/>随便玩每天几块到几十块 稍微努力每天上千没问题<br>随时提现秒到账 真实可靠不收费<br/>想玩的朋友赶紧点击下方链接注册</p>
+				<p class="p-t-b-15">http://g.vxgua.cn/Index/st/pucode/kufFfrYfbc</p>
+				<p>微信和QQ打不开网址<br>请复制到手机浏览器访问</p>
+			</div>
+			<a id="replication" href="#" class="df jc ac bigBtn">一键复制</a>
+		</section>
+	</section>
+	<!--弹窗-->
+	<section class="popup">
+		<div class="popupContent df fc jc ac">
+			<a href="#"><img class="popupContentImg" src="img/popupContent.png" /></a>
+			<a id="close"><img class="closeImg" src="img/close.png"/></a>
+		</div>
+	</section>
+	<script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#replication").on("click",function(){
+				$(".popup").show();
+			})
+			$(".closeImg").on("click",function(){
+				$(".popup").hide();
+			})
+		});
+	</script>	
+	</body>
+</html>

@@ -202,13 +202,16 @@ ol {
 }
 
 .c-red{
-	color: #FF2424;
+	color: #FF2424!important;;
+}
+.c-black{
+	color: #333!important;;
 }
 .c-gray{
-	color: #999;
+	color: #999!important;
 }
 .c-pink{
-	color: #F74B8C;
+	color: #F74B8C!important;;
 }
 
 .line-l-r{
@@ -253,9 +256,17 @@ ol {
 .font24 {
 	font-size: 24px;
 }
-
+.font30 {
+	font-size: 30px;
+}
+.font-bold{
+	font-weight: bold;
+}
 .p-15{
 	padding: 15px;
+}
+.p-t-b-15{
+	padding: 15px 0;
 }
 .p-l-r-15{
 	padding: 0 15px;

@@ -4,6 +4,7 @@
 	    <meta charset="utf-8">
 	    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	    <link rel="stylesheet" href="css/common.css" />
+	    <link rel="stylesheet" href="css/layer.css" />
 	    <link rel="stylesheet" href="css/mian.css" />
 	    <title>app</title>
 	</head>
@@ -14,32 +15,48 @@
 				<div class="df ac"><img class="arrowImg" src="img/arrow.png"/><p class="font16">修改密码</p></div>
 			</a>
 		</section>
-		<section class="top-header">
-			<dl class="changePassword df ac">
-				<dt>原始密码：</dt>
-				<dd><input type="password" placeholder="请输入原始密码"></dd>
-			</dl>
-			<dl class="changePassword df ac">
-				<dt>新密码：</dt>
-				<dd><input type="password" placeholder="请输入新密码"></dd>
-			</dl>
-			<dl class="changePassword df ac">
-				<dt>确认密码：</dt>
-				<dd><input type="password" placeholder="请再次输入新密码"></dd>
-			</dl>
-			<dl class="changePassword df ac">
-				<dt>验证码：</dt>
-				<dd class="df ac jsb flex-1">
-					<input class="" type="text" placeholder="请输入验证码">
-					<img class="verificationCode flex-1" src="img/verificationCode.png">
-				</dd>
-			</dl>
-			<a href="#" class="df jc ac bigBtn">确定</a>
-		</section>
+		<form>
+			<section class="top-header">
+				<dl class="changePassword df ac">
+					<dt>原始密码：</dt>
+					<dd><input id="oldPassword" value="" type="password" placeholder="请输入原始密码"></dd>
+				</dl>
+				<dl class="changePassword df ac">
+					<dt>新密码：</dt>
+					<dd><input value="" id="passOne" type="password" placeholder="请输入新密码"></dd>
+				</dl>
+				<dl class="changePassword df ac">
+					<dt>确认密码：</dt>
+					<dd><input value="" id="passTwo"  type="password" placeholder="请再次输入新密码"></dd>
+				</dl>
+				<dl class="changePassword df ac">
+					<dt>验证码：</dt>
+					<dd class="df ac jsb flex-1">
+						<input value="" class="" type="text" placeholder="请输入验证码">
+						<a class="verification verificationImg df">
+                            <img class="verificationCode flex-1" src="//admin.juzibao.net/api.php?s=ShebaoH5Api/getVertifyCode">
+                        </a>
+					</dd>
+				</dl>
+				<a id="submitBtn" href="#" class="df jc ac bigBtn">确定</a>
+			</section>
+		</form>
 	</section>
 	<script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
+	<script type="text/javascript" src="js/layer.js" ></script>
 	<script type="text/javascript">
 		$(function(){
+			$("#submitBtn").on("click",function(){
+                var passOne = $.trim($('#passOne').val());
+                var passTwo = $.trim($('#passTwo').val());
+				if(passOne != passTwo ){
+					layer.msg("两次密码不一致!");
+					return false;
+				}
+			});
+			$('.verificationImg').on('click', function () {
+                $(this).find('img').attr('src', '//admin.juzibao.net/api.php?s=ShebaoH5Api/getVertifyCode');
+            });
 		});
 	</script>	
 	</body>

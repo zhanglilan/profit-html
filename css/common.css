@@ -116,7 +116,8 @@ img {
 
 a {
 	text-decoration: none;
-	background: none
+	background: none;
+	 -webkit-tap-highlight-color: transparent; outline: none;
 }
 
 ul,
@@ -127,6 +128,7 @@ ol {
 :focus {
 	outline: none;
 }
+
 
 .clearfix {
 	zoom: 1;
@@ -237,6 +239,9 @@ ol {
 .width-100 {
 	width: 100%;
 }
+.width-50 {
+	width: 50%;
+}
 
 .font12 {
 	font-size: 12px;
@@ -268,8 +273,14 @@ ol {
 .p-15{
 	padding: 15px;
 }
+.p-t-b-10{
+	padding: 10px 0;
+}
 .p-t-b-15{
 	padding: 15px 0;
+}
+.p-r-0{
+	padding-right: 0;
 }
 .p-l-r-15{
 	padding: 0 15px;
@@ -288,4 +299,11 @@ ol {
 }
 .m-t-15{
 	margin-top: 15px;
+}
+
+.bg-white{
+	background: white!important;
+}
+.textIndex{
+	text-indent: 20px;
 }

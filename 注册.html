@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <link rel="stylesheet" href="css/common.css" />
+	    <link rel="stylesheet" href="css/mian.css" />
+	    <title>app</title>
+	</head>
+	<body>
+	<section>
+		<div class="lr-bg">
+			<div class="text-center"><img class="logo" src="img/logo.png"></div>
+			<form>
+				<div class="formList">
+					<p class="title">登录</p>
+					<ul>
+						<li class="df ac">
+							<img src="img/lr-icon1.png">
+							<input type="text" placeholder="请输入手机号码" />
+						</li>
+						<li class="df ac">
+							<img src="img/lr-icon2.png">
+							<input type="text"  placeholder="请输入密码" />
+						</li>
+						<li class="df ac">
+							<img src="img/lr-icon3.png">
+							<input type="text"  placeholder="请确认密码" />
+						</li>
+						<li class="df ac">
+							<img src="img/lr-icon4.png">
+							<input type="text"  placeholder="请输入验证码" />
+							<a class="verification verificationImg df">
+                            <img class="verificationCode flex-1" src="//admin.juzibao.net/api.php?s=ShebaoH5Api/getVertifyCode">
+                        </a>
+						</li>
+					</ul>
+					<a href="#" class="df jc ac bigBtn circBigBtn">注册</a>
+					<a href="登录.html" class="df jc ac c-pink p-t-b-15">已有账号，去登录？</a>
+				</div>
+			</form>
+		</div>
+	</section>
+	<script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.verificationImg').on('click', function () {
+                $(this).find('img').attr('src', '//admin.juzibao.net/api.php?s=ShebaoH5Api/getVertifyCode');
+            });
+		});
+	</script>	
+	</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <link rel="stylesheet" href="css/common.css" />
+	    <link rel="stylesheet" href="css/mian.css" />
+	    <title>app</title>
+	</head>
+	<body>
+	<section>
+		<div class="lr-bg">
+			<div class="text-center"><img class="logo" src="img/logo.png"></div>
+			<form>
+				<div class="formList">
+					<p class="title">登录</p>
+					<ul>
+						<li class="df ac">
+							<img src="img/lr-icon1.png">
+							<input type="text" placeholder="请输入手机号码" />
+						</li>
+						<li class="df ac">
+							<img src="img/lr-icon2.png">
+							<input type="password"  placeholder="请输入密码" />
+						</li>
+					</ul>
+					<a href="#" class="df jc ac bigBtn circBigBtn">登录</a>
+					<a id="forgetPwd" href="#" class="df jc ac c-pink p-t-b-15">忘记密码？</a>
+					<a href="注册.html" class="df jc c-black">还没有账号？点此注册</a>
+				</div>
+			</form>
+		</div>
+		<!--忘记密码弹窗-->
+		<div class="popup">
+			<div class="forgetPwd">
+				<p class="textIndex">请使用“唯一链接”进入修改密码，唯一链接已发送到你自己的微信号。在微信顶部搜索自己的微信昵称，找到自己的微信号，进去就可以看到。如果找不到唯一链接，请在活动界面点击“客服”，寻求帮助。</p>
+				<a id="forgetPwdBtn" class="c-pink font16 df jc">确定</a>
+			</div>
+		</div>
+	</section>
+	<script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#forgetPwd").on("click",function(){
+				$(".popup").show();
+			});
+			$("#forgetPwdBtn").on("click",function(){
+				$(".popup").hide();
+			})
+		});
+	</script>	
+	</body>
+</html>

@@ -267,6 +267,9 @@ ol {
 .font-bold{
 	font-weight: bold;
 }
+.font-500{
+	font-weight: 500;
+}
 .p-b-45{
 	padding-bottom: 45px;
 }

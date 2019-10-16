@@ -185,6 +185,10 @@ header .user img{
 .cashRecord{
 	background: #fff;
 }
+.profitListTitle.cashRecord-Pb{
+	margin-bottom: 2px;
+	height: 40px;
+}
 .cashRecord>li{
 	padding: 10px 15px;
 	border-bottom: 1px solid #eee;

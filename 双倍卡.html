@@ -26,13 +26,84 @@
 			<p class="df"><span class="tipNum"> 4、</span><span>每张双倍卡有效时间为24小时；</span></p>
 			<p class="df"><span class="tipNum"> 5、</span><span>每次只能使用一张双倍卡。</span></p>
 		</section>
-		<a href="#" class="df jc ac bigBtn bigBtnGray">使用</a>
-		<a href="#" class="df jc ac bigBtnBorder">获取双倍卡</a>
+		<a id="applyBtn"  class="df jc ac bigBtn">使用</a>
+		<!--灰色按钮-->
+		<!--<a href="#" class="df jc ac bigBtn bigBtnGray">使用</a>-->
+		<a id="applyBtnTime" class="df jc ac bigBtn bigBtnGray c-black font15" style="display: none;">
+			剩余：<span class="numBg joinh">23</span>&nbsp;：<span class="numBg joinm">59</span>&nbsp;：<span class="numBg joins">59</span>&nbsp;&nbsp;失效
+		</a>
+		<a id="doubleCard" href="#" class="df jc ac bigBtnBorder">获取双倍卡</a>
+	</section>
+	<!--弹窗-->
+	<section class="popup">
+		<div class="popupContent popupDoubleCard  df fc jc ac">
+			<div class="doubleCardBg df jc ac">
+				<a href="#" class="flex-1 df jc ac bigBtnBorder">继续获取</a>
+				<a href="#" class="flex-1 df jc ac bigBtn ">立即使用</a>
+			</div>
+			<a id="close"><img class="closeImg" src="img/close.png"/></a>
+		</div>
 	</section>
 	<script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
 	<script type="text/javascript">
 		$(function(){
+			//使用btn
+			$("#applyBtn").on("click",function(){
+				$(this).hide().next().show();
+			});
+			//获取双倍卡
+			$("#doubleCard").on("click",function(){
+				$(".popup").show();
+			});
+			$(".closeImg").on("click",function(){
+				$(".popup").hide();
+			})
 		});
-	</script>	
+		//倒计时
+		var setTimer = null;
+		var chazhi = 0;
+		//差值计算
+		//例子(模拟)
+		chazhi = 135 * 86400000;
+	 
+		//真实时间(注意月份需减掉1，否则时间会计算错误)
+		//chazhi = (new Date(year,month-1,day,hour,minute,second)) - (new Date()); //计算剩余的毫秒数
+		//chazhi = (new Date(2018,8-1,6,6,6,6)) - (new Date());
+		
+		//执行函数部分
+		countFunc(chazhi);
+		setTimer = setInterval(function() {
+			chazhi = chazhi - 1000;
+			countFunc(chazhi);
+		}, 1000);
+		function countFunc(leftTime) {
+			if(leftTime >= 0) {
+				var days = parseInt(leftTime / 1000 / 60 / 60 / 24, 10); //计算剩余的天数 
+				var hours = parseInt(leftTime / 1000 / 60 / 60 % 24, 10); //计算剩余的小时 
+				var minutes = parseInt(leftTime / 1000 / 60 % 60, 10); //计算剩余的分钟 
+				var seconds = parseInt(leftTime / 1000 % 60, 10); //计算剩余的秒数 
+				days = checkTime(days);
+				hours = checkTime(hours);
+				minutes = checkTime(minutes);
+				seconds = checkTime(seconds);
+				$(".joind").html(days);
+				$(".joinh").html(hours);
+				$(".joinm").html(minutes);
+				$(".joins").html(seconds);
+			} else {
+				clearInterval(setTimer);
+				$(".joind").html("00");
+				$(".joinh").html("00");
+				$(".joinm").html("00");
+				$(".joins").html("00");
+			}
+		}
+		function checkTime(i) { //将0-9的数字前面加上0，例1变为01 
+			if(i < 10) {
+				i = "0" + i;
+			}
+			return i;
+		}
+	</script>
 	</body>
 </html>

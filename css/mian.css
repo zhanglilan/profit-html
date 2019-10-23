@@ -527,3 +527,9 @@ header .user img{
 	font-size: 14px;
 	border-radius: 200px;
 }
+.text-ellipsis{
+	width: 155px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

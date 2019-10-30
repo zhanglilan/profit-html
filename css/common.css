@@ -202,7 +202,9 @@ ol {
 .fw {
 	flex-wrap: wrap;
 }
-
+.c-white{
+	color: #fff!important;
+}
 .c-red{
 	color: #FF2424!important;;
 }

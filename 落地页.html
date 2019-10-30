@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <link rel="stylesheet" href="css/common.css" />
+	    <link rel="stylesheet" href="css/mian.css" />
+	    <title>app</title>
+	</head>
+	<body>
+	<section class="landing">
+		<img src="img/landing-bg1.png"/>
+		<form>
+			<input  value="" type="text" placeholder="请输入用户名">
+			<input  value="" type="password" placeholder="请输入密码">
+			<div class="df jsb">
+				<input class="verificationInput"  value="" type="text" placeholder="请输入验证码">
+				<a class="verificationImg df ac">
+                    <img class="verificationCode flex-1" src="//admin.juzibao.net/api.php?s=ShebaoH5Api/getVertifyCode">
+                </a>
+			</div>
+			<a  class="filletBtn redBtn df ac jc m-t-15">注册下载</a>
+			<div class="df jc ac p-b-15">
+				<p class="c-white">已经注册？请<a href="#" class="c-red">点击登录</a></p>
+			</div>
+		</form>
+		<img src="img/landing-bg2.png"/>
+	</section>
+	<script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
+	<script type="text/javascript" src="js/layer.js" ></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.verificationImg').on('click', function () {
+                $(this).find('img').attr('src', '//admin.juzibao.net/api.php?s=ShebaoH5Api/getVertifyCode');
+            });
+		});
+	</script>	
+	</body>
+</html>

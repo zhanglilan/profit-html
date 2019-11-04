@@ -396,18 +396,13 @@ header .user img{
 }
 
 /*login*/
-.lr-bg{
-	background: url(../img/bg.png) no-repeat #fff;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-size: 100%;
+.bg-bottom{
+	position: absolute;
+    bottom: 0;
 }
 .logo{
 	width: 180px;
-	padding-top: 100px;
+	padding-top: 0;
 	padding-bottom: 40px;
 }
 .formList{

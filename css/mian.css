@@ -36,7 +36,7 @@ header .user img{
 
 .groupManagement{
 	background: #fff;
-	padding:0 15px 10px 15px;
+	padding:10px 15px 10px 15px;
 	margin: 0 0 10px;
 }
 .groupManagement .groupBtn{
@@ -587,6 +587,9 @@ header .user img{
     height: 12px;
     margin-right: 5px;
 }
+.merqueeCont{
+	padding: 10px 15px;
+}
 .merquee {
 	height: 25px;
 	line-height: 25px;
@@ -609,4 +612,34 @@ header .user img{
 	100% {
 		transform: translate(-100%, 0);
 	}
+}
+.icon-profit img{
+	width: 15px;
+	height: 14px;
+	margin-right: 5px;
+}
+.wk-title{
+	padding: 10px 15px;
+	border-bottom: 1px solid #eee;
+}
+.wk-title p{
+	font-size: 14px;
+	color: #333;
+}
+.wk-title span{
+}
+
+/*invite*/
+.invite .bg-title{
+	background: url(../img/bg-title.jpg) no-repeat top;
+	height: 658px;
+	width: 100%;
+	background-size: 100%;
+	
+}
+.red-bg{
+	background: url(../img/red-bg.jpg) top;
+	height: 658px;
+	width: 100%;
+	background-size: 100%;
 }

@@ -275,6 +275,7 @@ ol {
 .font-500{
 	font-weight: 500;
 }
+
 .p-b-45{
 	padding-bottom: 45px;
 }
@@ -295,6 +296,9 @@ ol {
 }
 .p-b-15{
 	padding-bottom: 15px;
+}
+.p-t-10{
+	padding-top: 10px;
 }
 .m-b-10 {
 	margin-bottom: 10px;

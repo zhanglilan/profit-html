@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <link rel="stylesheet" href="css/common.css" />
+	    <link rel="stylesheet" href="css/mian.css" />
+	    <title>app</title>
+	</head>
+	<body>
+	<section>
+		<section class="top df jsb jc ac">
+			<a href="javascript:history.go(-1);">
+				<div class="df ac"><img class="arrowImg" src="img/arrow.png"/><p class="font16">选择微信好友</p></div>
+			</a>
+			<a href="#">确定</a>
+		</section>
+		<section class="top-header">
+			<div class="search df ac">
+				<img src="img/icon-search.png">
+				<div class="searchList">
+					<ul class="df ac">
+						<li><img src="http://img1.qunarzz.com/sight/p0/1511/d2/d2aec2dfc5aa771290.water.jpg_140x140_abb362a7.jpg"></li>
+						<li><img src="http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg"></li>
+						<li><img src="http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg"></li>
+						<li><img src="http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg"></li>
+						<li><img src="http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg"></li>
+						<li><img src="http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg"></li>
+						<li><img src="http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg"></li>
+						<li><img src="http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg"></li>
+						<li><img src="http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg"></li>
+					</ul>
+				</div>
+				<input type="text" placeholder="搜索" />
+			</div>
+		</section>
+		<section class="friendList bg-white p-15">
+			<ul>
+				<li class="df ac active">
+					<i class="default selection "></i>
+					<div class="df ac width-100">
+						<img src="http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg">
+						<p class="text">不是昵称不是昵称不是昵称不是昵称不是昵称</p>
+					</div>
+				</li>
+				<li class="df ac">
+					<i class="default selection "></i>
+					<div class="df ac width-100">
+						<img src="http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg">
+						<p class="text">不是昵称</p>
+					</div>
+				</li>
+				<li class="df ac">
+					<i class="default selection "></i>
+					<div class="df ac width-100">
+						<img src="http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg">
+						<p class="text">不是昵称</p>
+					</div>
+				</li>
+				<li class="df ac">
+					<i class="default selection "></i>
+					<div class="df ac width-100">
+						<img src="http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg">
+						<p class="text">bbbb</p>
+					</div>
+				</li>
+			</ul>
+		</section>
+	</section>
+	<script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
+	<script type="text/javascript">
+		$(function(){
+			$(".friendList>ul>li").on("click",function(){
+				$(this).toggleClass('active')
+			})
+		});
+	</script>	
+	</body>
+</html>

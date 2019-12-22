@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <link rel="stylesheet" href="css/new-common.css" />
+	    <link rel="stylesheet" href="css/new-main.css" />
+	    <title>app</title>
+	</head>
+	<body>
+	<section>
+		<section class="top">
+			<a class=" df ac" href="javascript:history.go(-1);">
+				<div class="flex-1 df ac"><img class="arrowImg" src="img/title-arrow.png"/></div>
+				<p class="flex-1 text-center font16">任务大厅</p>
+				<p class="flex-1"></p>
+			</a>
+		</section>
+		<section class="p-t-44 bg-white">
+			<div class="df text-center task">
+				<div class="flex-1">
+					<p class="c-gray">您的当前等级</p>
+					<p class="c-red font16">lv.1</p>
+				</div>
+				<div class="flex-1">
+					<p class="c-gray">每日可发送条数</p>
+					<p class="c-red font16">1</p>
+				</div>
+				<div class="flex-1">
+					<p class="c-gray">好友数量</p>
+					<p class="c-red font16">100</p>
+				</div>
+			</div>
+			<section class="indexTip m-b-10">
+				<p class="c-black m-b-5">任务说明：</p>
+				<p class="df">
+					<span>1、</span>
+					<span>任务倒计时为0后可开启下次任务；</span>
+				</p>
+				<p class="df">
+					<span>2、</span>
+					<span>离线后任务停止；</span>
+				</p>
+				<p class="df">
+					<span>3、</span>
+					<span>您的等级越高，每天可同时开启的任务越多；</span>
+				</p>
+				<p class="df">
+					<span>4、</span>
+					<span>朋友圈任务佣金=好友数*0.01（元/条），好友数越多，佣金越高；
+					</span>
+				</p>
+				<p class="df">
+					<span>5、</span>
+					<span>好友数量每日更新。</span>
+				</p>
+			</section>
+		</section>
+		<section class="bg-white taskList">
+			<ul>
+				<li>
+					<div>
+						<p class="title font16 text-ellipsis">这里是广告标题</p>
+						<div class="df jsb">
+							<p class="left line-clamp-3">
+								这里是广告内容这里是广告内容，这里是内容这里是广告内容这里是，广告内容这里是广告内容，这里是广告内容这里是广告内容…
+							  </p>
+							  <div class="right df fc ac">
+								<p class="df ac"><img src="img/gold.png"/><span class="c-red font-bold font16">+5.00元</span></p>
+								<a href="" class="">开始赚钱</a>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div>
+						<p class="title font16 text-ellipsis">这里是广告标题</p>
+						<div class="df jsb">
+							<p class="left line-clamp-3">
+								这里是广告内容这里是广告内容，这里是内容这里是广告内容这里是，广告内容这里是广告内容，这里是广告内容这里是广告内容…
+							  </p>
+							  <div class="right df fc ac">
+								<p class="df ac"><img src="img/gold.png"/><span class="c-red font-bold font16">+5.00元</span></p>
+								<a href="" class="ban">开始赚钱</a>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div>
+						<p class="title font16 text-ellipsis">这里是广告标题</p>
+						<div class="df jsb">
+							<p class="left line-clamp-3">
+								这里是广告内容这里是广告内容，这里是内容这里是广告内容这里是，广告内容这里是广告内容，这里是广告内容这里是广告内容…
+							  </p>
+							  <div class="right df fc ac">
+								<p class="df ac c-black font-500">任务完成倒计时</p>
+								<p class="df jc ac m-t-5">
+								<span class="numBg joinh">23</span>&nbsp;：<span class="numBg joinm">59</span>&nbsp;：<span class="numBg joins">59</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</section>
+	</section>
+	<script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
+	<script type="text/javascript">
+		$(function(){
+			//使用btn
+			$("#applyBtn").on("click",function(){
+				$(this).hide().next().show();
+			});
+			//获取双倍卡
+			$("#doubleCard").on("click",function(){
+				$(".popup").show();
+			});
+			$(".closeImg").on("click",function(){
+				$(".popup").hide();
+			})
+		});
+		//倒计时
+		var setTimer = null;
+		var chazhi = 0;
+		//差值计算
+		//例子(模拟)
+		chazhi = 135 * 86400000;
+	 
+		//真实时间(注意月份需减掉1，否则时间会计算错误)
+		//chazhi = (new Date(year,month-1,day,hour,minute,second)) - (new Date()); //计算剩余的毫秒数
+		//chazhi = (new Date(2018,8-1,6,6,6,6)) - (new Date());
+		
+		//执行函数部分
+		countFunc(chazhi);
+		setTimer = setInterval(function() {
+			chazhi = chazhi - 1000;
+			countFunc(chazhi);
+		}, 1000);
+		function countFunc(leftTime) {
+			if(leftTime >= 0) {
+				var days = parseInt(leftTime / 1000 / 60 / 60 / 24, 10); //计算剩余的天数 
+				var hours = parseInt(leftTime / 1000 / 60 / 60 % 24, 10); //计算剩余的小时 
+				var minutes = parseInt(leftTime / 1000 / 60 % 60, 10); //计算剩余的分钟 
+				var seconds = parseInt(leftTime / 1000 % 60, 10); //计算剩余的秒数 
+				days = checkTime(days);
+				hours = checkTime(hours);
+				minutes = checkTime(minutes);
+				seconds = checkTime(seconds);
+				$(".joind").html(days);
+				$(".joinh").html(hours);
+				$(".joinm").html(minutes);
+				$(".joins").html(seconds);
+			} else {
+				clearInterval(setTimer);
+				$(".joind").html("00");
+				$(".joinh").html("00");
+				$(".joinm").html("00");
+				$(".joins").html("00");
+			}
+		}
+		function checkTime(i) { //将0-9的数字前面加上0，例1变为01 
+			if(i < 10) {
+				i = "0" + i;
+			}
+			return i;
+		}
+	</script>
+	</body>
+</html>

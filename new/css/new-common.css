@@ -1,0 +1,378 @@
+* {
+	box-sizing: border-box;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+textarea,
+input {
+	margin: 0;
+	padding: 0;
+}
+
+address,
+cite,
+dfn,
+em,
+var,
+i {
+	font-style: normal;
+}
+
+body {
+	font-size: 14px;
+	line-height: 22px;
+	font-family: "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", "Heiti SC",  "WenQuanYi Micro Hei";
+	color: #666;
+	background: #EEEEEE;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+th {
+	font-size: 100%;
+	font-weight: normal;
+}
+
+button,
+input,
+select,
+textarea {
+	font-size: 100%;
+}
+
+fieldset,
+img {
+	border: 0;
+}
+
+a {
+	text-decoration: none;
+	background: none;
+	 -webkit-tap-highlight-color: transparent; outline: none;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+:focus {
+	outline: none;
+}
+
+
+.clearfix {
+	zoom: 1;
+	clear: both;
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.clear {
+	clear: both;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.overflow {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.df {
+	display: flex;
+}
+
+.flex-1 {
+	flex: 1
+}
+
+.jc {
+	justify-content: center;
+}
+
+.jsb {
+	justify-content: space-between;
+}
+
+.jfs {
+	justify-content: flex-start;
+}
+
+.jfe {
+	justify-content: flex-end;
+}
+
+.ac {
+	align-items: center;
+}
+
+.afs {
+	align-items: flex-start;
+}
+
+.afe {
+	align-items: flex-end;
+}
+
+.fc {
+	flex-direction: column;
+}
+
+.fw {
+	flex-wrap: wrap;
+}
+.c-white{
+	color: #fff!important;
+}
+.c-red{
+	color: #FF0000!important;;
+}
+.c-black{
+	color: #333!important;;
+}
+.c-gray{
+	color: #999!important;
+}
+.c-pink{
+	color: #F74B8C!important;;
+}
+
+.line-l-r{
+	border-left:1px solid #EEEEEE;
+	border-right:1px solid #EEEEEE;
+}
+.line-l-r-red{
+	border-left:1px solid #F74B8C;
+	border-right:1px solid #F74B8C;
+}
+.text-center{
+	text-align: center;
+}
+.text-right{
+	text-align: right;
+}
+.show{
+	display: block;
+}
+.hide{
+	display: none;
+}
+.width-100 {
+	width: 100%;
+}
+.width-50 {
+	width: 50%;
+}
+
+.font12 {
+	font-size: 12px;
+}
+.font15 {
+	font-size: 15px!important;
+}
+.font16 {
+	font-size: 16px;
+}
+
+.font18 {
+	font-size: 18px;
+}
+
+.font20 {
+	font-size: 20px;
+}
+.font22 {
+	font-size: 22px;
+}
+
+.font24 {
+	font-size: 24px;
+}
+.font30 {
+	font-size: 30px;
+}
+.font-bold{
+	font-weight: bold;
+}
+.font-500{
+	font-weight: 500;
+}
+
+.p-b-45{
+	padding-bottom: 45px;
+}
+.p-15{
+	padding: 15px;
+}
+.p-t-b-10{
+	padding: 10px 0;
+}
+.p-t-b-15{
+	padding: 15px 0;
+}
+.p-r-0{
+	padding-right: 0;
+}
+.p-l-r-10{
+	padding: 0 10px;
+}
+.p-b-15{
+	padding-bottom: 15px;
+}
+.p-t-5{
+	padding-top: 5px;
+}
+.p-t-10{
+	padding-top: 10px;
+}
+.m-15{
+	margin: 15px;
+}
+.m-b-5 {
+	margin-bottom: 5px;
+}
+.m-b-10 {
+	margin-bottom: 10px;
+}
+.m-r-10{
+	margin-right: 10px;
+}
+.m-l-10{
+	margin-left: 10px;
+}
+.m-t-5{
+	margin-top: 5px;
+}
+.m-t-15{
+	margin-top: 15px;
+}
+.m-t-25{
+	margin-top: 25px;
+}
+.m-t-35{
+	margin-top: 35px;
+}
+.m-b-25{
+	margin-bottom: 25px;
+}
+.p-t-44{
+	padding-top: 44px;
+}
+.bg-white{
+	background: white!important;
+}
+.textIndex{
+	text-indent: 20px;
+}
+.border-r-5{
+	border-radius:5px ;
+}
+.text-ellipsis{
+	overflow: hidden;
+    text-overflow: ellipsis; 
+    -o-text-overflow: ellipsis;
+    white-space:nowrap;
+}
+.line-clamp-3{
+	overflow: hidden;
+	display: -webkit-box;    
+	text-overflow: ellipsis;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+}
+.line-height-28{
+	line-height: 28px;
+}
+.redBtn{
+    width: 100%;
+    height: 40px;
+    background: rgba(254,85,80,1);
+    border-radius: 200px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+}

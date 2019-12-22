@@ -1,0 +1,233 @@
+header{
+    background: #FE5550;
+    
+    color: #fff;
+}
+header .title{
+    padding:10px  10px 0;
+}
+header .user{
+    width: 56px;
+    height: 56px;
+    border-radius: 100%;
+    border: 2px solid #fff;
+    margin-right: 5px;
+}
+header .text-ellipsis{
+    width: 112px;
+}
+.lv{
+    width:50px;
+    height:22px;
+    background:rgba(255,255,255,1);
+    border-radius:10px;
+    color: #F85D5D;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+.white-arrow{
+    width: 5px;
+}
+.headerList{
+    background: rgba(255,255,255,0.2);
+    line-height: 15px;
+    padding: 12px 0;
+    color: #fff;
+}
+.headerProfit{
+    padding: 23px 0;
+    color: #fff;
+}
+.b-r-white{
+    border-right: 1px solid #fff;
+}
+.white-arrow{
+    margin-left: 5px;
+}
+.icon-tip img {
+    width: 15px;
+    height: 12px;
+    margin-right: 5px;
+}
+.merqueeCont {
+    background: #fff;
+	padding: 10px;
+}
+
+.merquee {
+	height: 25px;
+	line-height: 25px;
+	box-sizing: border-box;
+	word-break: break-all;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.merquee-txt {
+	display: inline-block;
+	padding-left: 0%;
+	/* 从右至左开始滚动 */
+	animation: marqueeTransform 16s linear infinite;
+}
+
+@keyframes marqueeTransform {
+	0% {
+		transform: translate(0, 0);
+	}
+	100% {
+		transform: translate(-100%, 0);
+	}
+}
+.banner{
+    padding: 15px 10px 5px;
+}
+.banner img{
+    width: 175px;
+}
+.indexList{
+    background: #fff;
+    margin: 15px 0 15px;
+    padding: 20px 0 10px;
+}
+.indexList ul li{
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+.indexList ul li a img{
+    width: 15px;
+    height: 15px;
+
+}
+.indexList ul li a{
+    color: #666;
+}
+.indexList ul li a img.icon{
+    margin-top: 4px;
+    margin-right: 5px;
+}
+.indexList ul li a .text{
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    width: 100%;
+    padding-right: 10px;
+}
+.indexList ul li:last-child{
+    margin-bottom: 0;
+}
+.indexList ul li:last-child a .text{
+    border-bottom: none;
+}
+.indexList ul li a .text .grayArrow{
+    width: 6px;
+    margin-left: 5px;
+    height: inherit;
+    position: relative;
+    top: 1px;
+}
+.indexTip{
+    padding: 0 10px 20px;
+}
+.indexTip p:first-child{
+    font-size: 16px;
+}
+.indexTip p{
+    font-size: 12px;
+}
+.top{
+    position: fixed;
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    padding:0 15px;
+    color: #fff;
+    background: #F85D5D;
+}
+.top>a{
+    color: #fff;
+}
+.top .arrowImg{
+    width: 9px;
+}
+.task{
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px;
+}
+.taskList{
+    padding: 15px 10px;
+}
+.taskList ul li{
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.taskList ul li:last-child{
+    border-bottom: none;
+}
+.taskList ul li .title{
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.taskList ul li .left{
+    width: 70%;
+    padding-right: 20px;
+}
+.taskList ul li .right img{
+    width: 15px;
+    margin-right:5px;
+}
+.taskList ul li .right a{
+    width: 80px;
+    height: 22px;
+    background: rgba(248,93,93,1);
+    border-radius: 22px;
+    display: inline-block;
+    text-align: center;
+    line-height: 22px;
+    color: #fff;
+    margin-top: 5px;
+}
+.taskList ul li .right a.ban{
+    background: #999;
+}
+.numBg {
+	background: #333;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.doubleCardBg {
+	width: 100%;
+	padding: 265px 10px 0 10px;
+}
+
+.popupDoubleCard {
+	background: url(../img/popupDoubleCard.png) no-repeat;
+	width: 258px;
+	height: 272px;
+	background-size: 100%;
+}
+
+.doubleCardBg .bigBtnBorder {
+	font-size: 14px;
+	height: 35px;
+	margin: 0;
+	margin-right: 10px;
+	border-radius: 200px;
+	background: -webkit-linear-gradient( right, #fff 0%, #fff 100%), -webkit-linear-gradient( right, #fdbe80 0%, #f74d8c 100%);
+	background-clip: content-box, padding-box;
+}
+
+.doubleCardBg .bigBtn {
+	margin: 0;
+	height: 35px;
+	font-size: 14px;
+	border-radius: 200px;
+}

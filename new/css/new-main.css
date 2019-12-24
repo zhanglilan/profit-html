@@ -121,8 +121,8 @@ header .text-ellipsis{
 .indexList ul li a .text .grayArrow{
     width: 6px;
     margin-left: 5px;
-    height: inherit;
-    position: relative;
+	height: inherit;
+	position: relative;
     top: 1px;
 }
 .indexTip{
@@ -135,13 +135,13 @@ header .text-ellipsis{
     font-size: 12px;
 }
 .top{
-    position: fixed;
     width: 100%;
     height: 44px;
     line-height: 44px;
     padding:0 15px;
     color: #fff;
-    background: #F85D5D;
+	background: #F85D5D;
+	position: fixed;
 }
 .top>a{
     color: #fff;
@@ -233,20 +233,20 @@ header .text-ellipsis{
 }
 .popup {
 	display: none;
-	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
 	background: rgba(0, 0, 0, 0.6);
+	position: fixed;
 }
 
 .popup .popupContent {
-	position: absolute;
 	top: 50%;
 	left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
+	width: 100%;
+	position: absolute;
 }
 
 .popup .popupContent .closeImg {
@@ -263,10 +263,19 @@ header .text-ellipsis{
     border-radius: 5px;
 }
 .popup .text .textContent{
-    border: 2px dashed #fff;
+    border: 1px dashed #fff;
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 10px;
+}
+.popup .successPop{
+	text-align: center;
+	height: 357px;
+	display: none;
+}
+.popup .successPop img{
+	width: 90%;
+	padding: 20px;
 }
 .copyBtn{
     background: #fff;
@@ -309,6 +318,16 @@ header .text-ellipsis{
 .profitListContent>li {
     padding: 10px 0;
     border-bottom: 1px solid #eee;
+}
+.profitListContent>li>p{
+	font-size: 12px;
+	padding: 0 10px;
+}
+.profitListContent>li>p.m-l--15{
+	padding: 0;
+}
+.line-height-15{
+	line-height: 15px;
 }
 .profitListTitle.cashRecord-Pb {
     border-bottom: 1px solid #eee;
@@ -355,8 +374,8 @@ header .text-ellipsis{
 	margin: 0 5px;
 	background: rgba(255, 255, 255, 1);
 	box-shadow: inset 0px 0px 20px 1px rgba(255, 88, 88, 1);
-	border-radius: 10px;
 	position: relative;
+	border-radius: 10px;
 }
 
 .result .lineTitle {
@@ -527,4 +546,93 @@ header .text-ellipsis{
 	width: 0;
 	height: 0;
 	color: transparent;
+}
+.grade{
+	text-align: center;
+	padding:10px;
+}
+.grade table{
+	margin-top: 10px;
+	width: 100%;
+}
+
+.grade table th{
+	color: #333;
+	font-weight: 500;
+	font-size: 13px;
+}
+.grade table td{
+	font-size: 12px;
+	line-height: 16px;
+}
+.grade table th,.grade table td{
+	background:rgba(248,93,93,.3);
+	border:1px solid #fff;
+	padding: 8px 10px;
+
+}
+.imgRadius>img{
+	width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+/*登录注册*/
+.login{
+	background: url(../img/login-bg.png) no-repeat;
+	width: 100%;
+	height: 667px;
+	background-size:100% 100% ;
+}
+.login form{
+	padding-top: 394px;
+}
+.loginForm{
+	border-bottom: 1px solid #eee;
+	padding-bottom: 5px;
+	margin: 0 37px 25px;
+}
+.loginForm img{
+	width: 22px;
+    height: 23px;
+}
+.registerForm img{
+	width: 15px;
+    margin-left: 10px;
+}
+.loginForm input,.registerForm input{
+	width: 100%;
+    height: 35px;
+    background: #fffcfc;
+    border: none;
+	text-indent: 10px;
+	color: #222;
+}
+.register{
+	background: url(../img/register-bg.png) no-repeat;
+	width: 100%;
+	height: 667px;
+	background-size:100% 100% ;
+}
+.register-bg{
+    background: #f7864c!important;
+}
+.register form{
+	margin: 0 30px;
+	padding-top: 450px;
+}
+.registerForm{
+	background: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    height: 40px;
+    line-height: 40px;
+}
+.registerForm .verification img{
+	width: 60px;
+    height: 20px;
+    margin-right: 10px;
+}
+.register .redBtn{
+	background:rgba(204,39,15,1);
+	margin-top: 20px;
 }

@@ -124,7 +124,9 @@ ul,
 ol {
 	list-style: none;
 }
-
+input::-webkit-input-placeholder {
+	color: #C5C5C5;
+}
 :focus {
 	outline: none;
 }
@@ -285,6 +287,9 @@ ol {
 .p-b-45{
 	padding-bottom: 45px;
 }
+.p-10{
+	padding: 10px;
+}
 .p-15{
 	padding: 15px;
 }
@@ -339,6 +344,9 @@ ol {
 .m-b-25{
 	margin-bottom: 25px;
 }
+.m-l--15{
+	margin-left: -15px;
+}
 .p-t-44{
 	padding-top: 44px;
 }
@@ -390,6 +398,13 @@ ol {
     line-height: 40px;
     font-size: 16px;
     font-weight: 500;
+}
+.login .redBtn{
+	background:rgba(248,93,93,1);
+	box-shadow:0px 11px 16px 0px rgba(248,93,93,0.23);
+	border-radius:40px;
+	margin: 50px 20px;
+    width: initial;
 }
 .border-bottom{
 	border-bottom: 1px solid #eee;

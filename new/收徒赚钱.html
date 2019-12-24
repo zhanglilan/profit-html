@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <link rel="stylesheet" href="css/new-common.css" />
+	    <link rel="stylesheet" href="css/new-main.css" />
+	    <title>app</title>
+	</head>
+	<body>
+	<section>
+		<section class="top">
+			<a class=" df ac" href="javascript:history.go(-1);">
+				<div class="flex-1 df ac"><img class="arrowImg" src="img/title-arrow.png"/></div>
+				<p class="flex-1 text-center font16">收徒赚钱</p>
+				<p class="flex-1"></p>
+			</a>
+		</section>
+		<section class="p-t-44 bg-white">
+			<section class="df jsb border-bottom p-10">
+				<p>提现徒弟数量</p>
+				<p class="c-red">32人</p>
+			</section>
+			<section class="indexTip m-b-10 m-t-15">
+				<p class="c-black m-b-5">收徒奖励说明：</p>
+				<p class="df">
+					<span>1、</span>
+					<span>徒弟首次提现后，师傅直接奖励3元到账；</span>
+				</p>
+				<p class="df">
+					<span>2、</span>
+					<span>享有徒弟任务收入的20%分成，永久绑定；</span>
+				</p>
+				<p class="df">
+					<span>3、</span>
+					<span>提现徒弟数量达到120人后，你将拥有所有的无限层级的徒子徒孙任务收入的5%分成，永久绑定；</span>
+				</p>
+				<section class="p-l-r-10 m-t-15">
+					<a id="stLink" class="redBtn">获取收徒链接</a>
+				</section>
+			</section>
+		</section>
+		<section class="bg-white">
+			<div class="df jc ac profitListTitle cashRecord-Pb text-center">
+				<p class="flex-1">微信头像</p>
+				<p class="flex-1 m-l--15">微信昵称</p>
+				<p class="flex-1">收徒时间</p>
+				<p class="flex-1">贡献金额</p>
+			</div>
+			<ul class="profitListContent text-center">
+				<li class="df jc ac">
+					<p class="flex-1 imgRadius">
+						<img src="http://img1.qunarzz.com/sight/p0/1511/d2/d2aec2dfc5aa771290.water.jpg_140x140_abb362a7.jpg">
+					</p>
+					<p class="flex-1 m-l--15">这是微信昵称</p>
+					<p class="flex-1 line-height-15">2019/09/24 12:56:42</p>
+					<p class="flex-1">15.26</p>
+				</li>
+				<li class="df jc ac">
+					<p class="flex-1 imgRadius">
+						<img src="http://img1.qunarzz.com/sight/p0/1511/d2/d2aec2dfc5aa771290.water.jpg_140x140_abb362a7.jpg">
+					</p>
+					<p class="flex-1 m-l--15">这是微信昵称</p>
+					<p class="flex-1 line-height-15">2019/09/24 12:56:42</p>
+					<p class="flex-1">15.26</p>
+				</li>
+			</ul>
+		</section>
+	</section>
+	<section class="popup">
+		<div class="popupContent df fc jc ac">
+			<div class="text">
+				<div class="textContent">
+					<p class="text-center">微信挂机自动赚APP</p>
+					<div>
+						<p class="df">
+							<span>1、</span>
+							<span>24小时挂机自动赚钱，不影响手机使用，不耗流量；</span>
+						</p>
+						<p class="df">
+							<span>2、</span>
+							<span>每天收入几块到几十块，可收徒，收入还可以裂变增长； </span>
+						</p>
+						<p class="df">
+							<span>3、</span>
+							<span>提现秒到零钱。</span>
+						</p>
+					</div>
+				</div>
+				<p>注意</p>
+				<div>
+					<p class="df font12">
+						<span>1、</span>
+						<span>如果被官方屏蔽请重新获取收徒链接；</span>
+					</p>
+					<p class="df font12">
+						<span>2、</span>
+						<span>分享到社交平台如：微信群/朋友圈/抖音群/QQ群效果更佳。</span>
+					</p>
+				</div>
+				<div class="copyBtn"><a>一键复制</a></div>
+			  </div>
+			  <div class="successPop">
+				  <img src="img/success-pop.png"/>
+			  </div>
+			<a id="close"><img class="closeImg" src="img/close.png"/></a>
+		</div>
+	</section>
+	<script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#stLink").on("click",function(){
+				$(".popup").show();
+			});
+			$(".closeImg").on("click",function(){
+				$(".popup").hide();
+			});
+			$(".copyBtn").on("click",function(){
+				$(".text").hide();
+				$(".successPop").show();
+			});
+		});
+	</script>
+	</body>
+</html>

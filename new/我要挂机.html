@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <link rel="stylesheet" href="css/new-common.css" />
+	    <link rel="stylesheet" href="css/new-main.css" />
+	    <title>app</title>
+	</head>
+	<body>
+	<section>
+		<section class="top">
+			<a class=" df ac" href="javascript:history.go(-1);">
+				<div class="flex-1 df ac"><img class="arrowImg" src="img/title-arrow.png"/></div>
+				<p class="flex-1 text-center font16">我要挂机</p>
+				<p class="flex-1"></p>
+			</a>
+		</section>
+		<section class="p-t-44 bg-white">
+			<section class="indexTip m-b-10 m-t-15">
+				<p class="c-black m-b-5">操作方法：</p>
+				<div>
+					<p class="c-black font14 text-center">方法一：使用两部手机</p>
+					<p>
+						点击下方<span class="c-red">“开始挂机”</span>按钮，用其他手机（如身边朋友）拍照该二维码，然后打开微信“扫一扫”刚拍照的照片，确认后返回本网页即可。
+					</p>
+				</div>
+				<div class="border-bottom"></div>
+				<div>
+					<p class="c-black font14 text-center">方法二：使用手机+电脑</p>
+					<p>
+						在电脑上输入网址（这里是网址），登录账户和密码，点击上方<span class="c-red">“开始挂机”</span>按钮，然后用手机上的微信扫码点击登录即可。
+					</p>
+				</div>
+			</section>
+		</section>
+		<section class="indexTip m-b-10 m-t-10 p-t-10 bg-white">
+			<p class="c-black m-b-5 m-t-10">提示</p>
+			<p class="df">
+				<span>1、</span>
+				<span>首次提现绑定微信号必须为实名号；</span>
+			</p>
+			<p class="df">
+				<span>2、</span>
+				<span>首次满1元即可提现，以后提现必须满5元，提现秒到账；</span>
+			</p>
+			<p class="df">
+				<span>3、</span>
+				<span>提现时间为每周一至周六，24小时随时可提现；</span>
+			</p>
+		</section>
+		<section class="bg-white">
+			<section class="p-l-r-10 m-t-15">
+				<a class="redBtn yellowBtn">开始挂机</a>
+			</section>
+		</section>
+	</section>
+	<section class="popup">
+		<div class="popupContent df fc jc ac">
+			<div class="qrCode">
+				<img src="http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg"/>
+				<p class="c-red">提示：长按识别无效</p>
+				<p>
+					仅为授权操作，只可扫描不可识别，保存相册识别无效！请用另外一部手机拍照后再使用微信扫码登录
+				</p>
+			</div>
+			<a id="close"><img class="closeImg" src="img/close.png"/></a>
+		</div>
+	</section>
+	<script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
+	<script type="text/javascript">
+		$(function(){
+			//获取双倍卡
+			$(".yellowBtn").on("click",function(){
+				$(".popup").show();
+			});
+			$(".closeImg").on("click",function(){
+				$(".popup").hide();
+			})
+		});
+	</script>
+	</body>
+</html>

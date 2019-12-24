@@ -215,7 +215,7 @@ ol {
 	color: #999!important;
 }
 .c-pink{
-	color: #F74B8C!important;;
+	color: #F85D5D!important;;
 }
 
 .line-l-r{
@@ -247,6 +247,9 @@ ol {
 
 .font12 {
 	font-size: 12px;
+}
+.font14 {
+	font-size: 14px!important;
 }
 .font15 {
 	font-size: 15px!important;
@@ -304,7 +307,7 @@ ol {
 	padding-top: 5px;
 }
 .p-t-10{
-	padding-top: 10px;
+	padding-top: 10px!important;
 }
 .m-15{
 	margin: 15px;
@@ -375,4 +378,21 @@ ol {
     line-height: 40px;
     font-size: 16px;
     font-weight: bold;
+}
+.yellowBtn{
+	width: 100%;
+    height: 40px;
+    background:#F8AE43;
+    border-radius: 200px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.border-bottom{
+	border-bottom: 1px solid #eee;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
 }

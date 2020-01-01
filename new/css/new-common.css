@@ -411,3 +411,6 @@ input::-webkit-input-placeholder {
 	padding-bottom: 10px;
 	margin-bottom: 10px;
 }
+.b-r-red{
+	border-right: 1px solid #f85d5d;
+}

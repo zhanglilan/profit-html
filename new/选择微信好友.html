@@ -20,48 +20,38 @@
 			<div class="search df ac">
 				<img src="img/icon-search.png"/>
 				<div class="searchList">
-					<ul class="df ac">
-						<li><img src="http://img1.qunarzz.com/sight/p0/1511/d2/d2aec2dfc5aa771290.water.jpg_140x140_abb362a7.jpg"></li>
-						<li><img src="http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg"></li>
-						<li><img src="http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg"></li>
-						<li><img src="http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg"></li>
-						<li><img src="http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg"></li>
-						<li><img src="http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg"></li>
-						<li><img src="http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg"></li>
-						<li><img src="http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg"></li>
-						<li><img src="http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg"></li>
-					</ul>
+					<ul class="df ac chose-user-list"></ul>
 				</div>
 				<input type="text" placeholder="搜索" />
 			</div>
 		</section>
 		<section class="friendList bg-white p-15">
-			<ul>
-				<li class="df ac active">
+			<ul class="user-list">
+				<li class="df ac" data-user-id="1">
 					<i class="default selection "></i>
 					<div class="df ac width-100">
-						<img src="http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg">
+						<img class="avatar" src="http://img1.qunarzz.com/sight/p0/1511/d2/d2aec2dfc5aa771290.water.jpg_140x140_abb362a7.jpg">
 						<p class="text">不是昵称不是昵称不是昵称不是昵称不是昵称</p>
 					</div>
 				</li>
-				<li class="df ac">
+				<li class="df ac" data-user-id="2">
 					<i class="default selection "></i>
 					<div class="df ac width-100">
-						<img src="http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg">
+						<img class="avatar" src="http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg">
 						<p class="text">不是昵称</p>
 					</div>
 				</li>
-				<li class="df ac">
+				<li class="df ac" data-user-id="3">
 					<i class="default selection "></i>
 					<div class="df ac width-100">
-						<img src="http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg">
+						<img class="avatar" src="http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg">
 						<p class="text">不是昵称</p>
 					</div>
 				</li>
-				<li class="df ac">
+				<li class="df ac" data-user-id="4">
 					<i class="default selection "></i>
 					<div class="df ac width-100">
-						<img src="http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg">
+						<img class="avatar" src="http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg">
 						<p class="text">bbbb</p>
 					</div>
 				</li>
@@ -70,10 +60,21 @@
 	</section>
 	<script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
 	<script type="text/javascript">
-		$(function(){
-			$(".friendList>ul>li").on("click",function(){
-				$(this).toggleClass('active')
-			})
+		$(function () {
+			$(document).on('click', '.user-list > li', function () {
+				var that = $(this);
+				var userId = that.data('userId');
+				if (that.hasClass('active')) {
+					// 取消
+					that.removeClass('active');
+					$('.chose-user-list').find('#user-' + userId).remove();
+				} else {
+					// 选择
+					that.addClass('active');
+					var avatar = that.find('.avatar').attr('src');
+					$('.chose-user-list').append($('<li id="user-' + userId + '"><img src="' + avatar + '"></li>'));
+				}
+			});
 		});
 	</script>	
 	</body>

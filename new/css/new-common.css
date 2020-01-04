@@ -387,6 +387,19 @@ input::-webkit-input-placeholder {
     font-size: 16px;
     font-weight: bold;
 }
+.whiteBtn{
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    border-radius: 200px;
+    color: rgba(254,85,80,1);
+    display: block;
+    border:1px solid rgba(254,85,80,1);
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+}
 .yellowBtn{
 	width: 100%;
     height: 40px;
@@ -399,13 +412,7 @@ input::-webkit-input-placeholder {
     font-size: 16px;
     font-weight: 500;
 }
-.login .redBtn{
-	background:rgba(248,93,93,1);
-	box-shadow:0px 11px 16px 0px rgba(248,93,93,0.23);
-	border-radius:40px;
-	margin: 50px 20px;
-    width: initial;
-}
+
 .border-bottom{
 	border-bottom: 1px solid #eee;
 	padding-bottom: 10px;

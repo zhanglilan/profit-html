@@ -584,16 +584,20 @@ header .text-ellipsis{
 	background-size:100% 100% ;
 }
 .login form{
-	padding-top: 394px;
+	padding-top: 365px;
 }
 .loginForm{
 	border-bottom: 1px solid #eee;
 	padding-bottom: 5px;
-	margin: 0 37px 25px;
+	margin: 0 37px 15px;
 }
 .loginForm img{
 	width: 22px;
     height: 23px;
+}
+.loginForm .verification img{
+	width:60px;
+	height: 22px;
 }
 .registerForm img{
 	width: 15px;
@@ -635,4 +639,26 @@ header .text-ellipsis{
 .register .redBtn{
 	background:rgba(204,39,15,1);
 	margin-top: 20px;
+}
+.redBtn{
+	background:rgba(248,93,93,1);
+	border-radius:40px;
+	margin: 0 20px 10px 20px;
+    width: initial;
+}
+.whiteBtn{
+	background:#fff;
+	border-radius:40px;
+	border:1px solid rgba(248,93,93,1);
+	margin: 0 20px 10px 20px;
+    width: initial;
+}
+.register-icon{
+	padding-top: 120px;
+    text-align: center;
+}
+.register-icon p{
+	font-size: 24px;
+	color: #333;
+	padding: 20px 0 40px 0;
 }

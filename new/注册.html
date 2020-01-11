@@ -10,6 +10,7 @@
 	<body class="bg-white">
 	<section>
 		<div class="login">
+			<div class="df jc p-t-80"><img width="80" src="img/loginLogo.png"></div>
 			<form>
 				<div class="loginForm df ac">
 					<img src="img/login-icon1.png">
@@ -28,13 +29,47 @@
 				</div>
 			</form>
 			<div class="p-t-10">
-				<a href="#" class="redBtn">注册</a>
+				<a id="registerBtn" href="#" class="redBtn">注册</a>
 			</div>
 		</div>
 	</section>
+	<!--新用户注册红包-->
+	<section class="popup">
+		<div class="popupContent df fc jc ac">
+			<div class="red-envelopes">
+				<p>新用户注册赠送现金红包</p>
+				<p>0.5<span>元</span></p>
+				<p class="font12">领取后直接存入余额</p>
+			</div>
+			<a href="#" class="red-envelopes-btn">立即领取</a>
+		</div>
+	</section>
+	<!--新年红包-->
+	<!--<section class="popup">
+		<div class="popupContent df fc jc ac">
+			<div class="new-y-bonus"><img class="width-100" src="img/new-y-bonus.png"/></div>
+			<div class="new-y-cont" style="display: none;">
+				<p>恭喜你获得新年红包</p>
+				<p>0.80<span>元</span></p>
+				<a href="#" class="new-y-bonus-btn">立即领取</a>
+				<p class="font12">领取成功后将自动发放至余额</p>
+			</div>
+			<a id="close"><img class="closeImg" src="img/close.png"/></a>
+		</div>
+	</section>-->
 	<script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
 	<script type="text/javascript">
 		$(function(){
+			$("#registerBtn").on("click",function(){
+				$(".popup").show();
+			});
+			$(".closeImg").on("click",function(){
+				$(".popup").hide();
+			});
+			$(".new-y-bonus").on("click",function(){
+				$(".new-y-bonus").hide();
+				$(".new-y-cont").show();
+			});
 		});
 	</script>
 	</body>

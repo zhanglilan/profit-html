@@ -4,142 +4,217 @@
 	    <meta charset="utf-8">
 	    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	    <link rel="stylesheet" href="css/common.css" />
-	    <link rel="stylesheet" href="css/mian.css" />
+		<link rel="stylesheet" href="css/mian.css" />
+		<link rel="stylesheet" href="css/swiper.min.css"/>
 	    <title>app</title>
 	</head>
 	<body>
 	<section>
-		<header>
-			<a href="#" class="c-white a-refresh">刷新</a>
-			<div class="df jsb ac p-b-15">
-				<div class="df ac">
-					<div class="user df jc ac"><img src="img/user.png"></div>
-					<p>这是昵称</p>
-				</div>
-				<div>
-					<p class="font20">余额：<span>26.389</span>元</p>
-				</div>
-			</div>
-			<div class="df jc ac">
-				<div class="flex-1 text-center"><p>7632.97</p><p class="font12">总收入</p></div>
-				<div class="flex-1 text-center"><p>1028.02</p><p class="font12">挂机</p></div>
-				<div class="flex-1 text-center"><p>2848.96</p><p class="font12">群共享</p></div>
-				<div class="flex-1 text-center"><p>3755.99</p><p class="font12">收徒</p></div>
-				<div class="flex-1 text-center"><p>0</p><p class="font12">双倍卡</p></div>
-			</div>
+		<header class="df ac jsb">
+			<a href="#" class="df"><img src="../item2/img/arrow.png"/></a>
+			<p>首页</p>
+			<a href="#">刷新</a>
 		</header>
-		<section class="profitList df text-center ">
-			<div class="flex-1">
-				<img src="img/tab-icon1.png">
-				<p>余额提现</p>
-				<p class="c-red font12">0.3.元起提</p>
+		<section class="content">
+			<div class="df ac jsb p-l-r-10 state">
+				<p class="font16">微信状态：<span class="c-blue">在线</span></p>
+				<a href="#" class="grayBtn">登录</a>
 			</div>
-			<div class="flex-1 line-l-r">
-				<img src="img/tab-icon2.png">
-				<p>挂机赚钱</p>
-				<p class="c-red font12">在线</p>
-				<p class="c-red font12 line-height-15">（双倍加速中）</p>
-				<!--<p class="c-gray font12 line-height-15">（未加倍）</p>-->
+			<!-- Swiper -->
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+				<div class="swiper-slide"><img class="width100" src="img/indexImg/banner1.jpg"/></div>
+				<div class="swiper-slide"><img class="width100" src="img/indexImg/banner2.jpg"/></div>
+				<div class="swiper-slide"><img class="width100" src="img/indexImg/banner3.jpg"/></div>
+				<div class="swiper-slide"><img class="width100" src="img/indexImg/banner4.jpg"/></div>
+				<div class="swiper-slide"><img class="width100" src="img/indexImg/banner5.jpg"/></div>
+				<div class="swiper-slide"><img class="width100" src="img/indexImg/banner6.jpg"/></div>
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
 			</div>
-			<div class="flex-1">
-				<img src="img/tab-icon3.png">
-				<p>收徒赚钱</p>
-				<p class="c-red font12">赚30%-50%</p>
+			<!--我的收益-->
+			<div class="p-l-r-10 profit">
+				<div class="title">我的收益</div>
+				<div class="bgShow indexBg">
+					<div class="text-center p-t-5 space">
+						<p class="font12 c-gray">总收益</p>
+						<p class="font26 c-blue font-bold">390.98</p>
+					</div>
+					<div class="text-center space">
+						<div class="df jsb">
+							<div class="flex-1">
+								<p class="font12 c-gray">收徒直接奖励</p>
+								<p class="font16 c-blue font-bold">32.14</p>
+							</div>
+							<div class="flex-1">
+								<p class="font12 c-gray">挂机收益</p>
+								<p class="font16 c-blue font-bold">32.14</p>
+							</div>
+						</div>
+					</div>
+					<div class="text-center space">
+						<div class="df jsb">
+							<div class="flex-1">
+								<p class="font12 c-gray">今日直营业绩</p>
+								<p class="font16 c-blue font-bold">32.14</p>
+							</div>
+							<div class="flex-1">
+								<p class="font12 c-gray">今日预计直营收益</p>
+								<p class="font16 c-blue font-bold">32.14</p>
+							</div>
+							<div class="flex-1">
+								<p class="font12 c-gray">累计直营收益</p>
+								<p class="font16 c-blue font-bold">32.14</p>
+							</div>
+						</div>
+					</div>
+					<div class="text-center space">
+						<div class="df jsb">
+							<div class="flex-1">
+								<p class="font12 c-gray">今日团队业绩</p>
+								<p class="font16 c-blue font-bold">32.14</p>
+							</div>
+							<div class="flex-1">
+								<p class="font12 c-gray">今日预计团队收益</p>
+								<p class="font16 c-blue font-bold">32.14</p>
+							</div>
+							<div class="flex-1">
+								<p class="font12 c-gray">累计团队收益</p>
+								<p class="font16 c-blue font-bold">32.14</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="rowHeight p-t-b-10">
+					<p class="font12">注意：</p>
+					<p class="font12 textIndex">1、挂机收益和收徒直接奖励是试结算，业绩收益次日早上八点前结算；</p>
+					<p class="font12 textIndex">2、累计直营收益和累计团队收益中不含当日收益。</p>
+				</div>
+				<a href="#" class="blueBtn blockBtn df ac jc">
+					<img width="16" src="img/indexImg/index-icon1.png"/>&nbsp;&nbsp;游戏收益详情
+				</a>
+			</div>
+			<!--我的收益-->
+			<div class="p-l-r-10 team">
+				<div class="title">我的团队</div>
+				<div class="bgShow text-center">
+					<div class="df">
+						<div class="flex-1 border-right">
+							<p class="font12">团队总人数（人）</p>
+							<p class="font18 c-blue font-bold">1567</p>
+						</div>
+						<div class="flex-1">
+							<p class="font12">今日新增人数（人）</p>
+							<p class="font18 c-blue font-bold">436</p>
+						</div>
+					</div>
+					<div class="df m-t-25">
+						<a href="#" class="blueBtn blockBtn flex-1 df ac jc">直属下级详情</a>
+						<a href="#" class="blueBtn blockBtn lineBtn flex-1 rowHeight df fc ac jc">直属下级详情<p class="font12">赚5元+无限层级提成</p></a>
+					</div>
+				</div>
+			</div>
+			<!--推广规则及下载-->
+			<div class="p-l-r-10 extend clearfix">
+				<div class="title">推广规则及下载</div>
+				<ul class="p-t-b-10 clearfix">
+					<li>
+						<a href="#">
+							<img width="33" src="img/indexImg/bg-icon2.png"/>
+							<p>推广说明</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img width="33" src="img/indexImg/bg-icon3.png"/>
+							<p>收益说明</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img width="33" src="img/indexImg/bg-icon4.png"/>
+							<p>APP下载</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!--最新公告-->
+			<div class="p-l-r-10 notice">
+				<div class="df ac jsb">
+					<div class="title">最新公告</div>
+					<a href="#" class="relative">
+						<p>查看全部</p>
+						<p>
+							<i class="right">
+								<i class="right-arrow1"></i><i class="right-arrow2"></i>
+							</i>
+						</p>
+					</a>
+				</div>
+				<ul>
+					<li>
+						<a href="#">1、这是第一个公告这是第一个公告这是第一个公告这是第一个公告</a>
+					</li>
+					<li>
+						<a href="#">2、这是第一个公告这是第一个公告…</a>
+					</li>
+					<li>
+						<a href="#">3、这是第一个公告这是第一个公告…</a>
+					</li>
+				</ul>
 			</div>
 		</section>
-		<section class="merqueeCont df ac">
-			<div  class="icon-tip"><img src="img/icon-tip.png"></div>
-			<div class="merquee">
-				<span class="merquee-txt">跑马灯 css实现跑马灯 css实现跑马灯 css实现跑马灯 css实现跑马灯 css实现跑马灯 css实现</span>
-			</div>
-		</section>
-		<div class="df jsb p-l-r-15 bg-white wk-title">
-			<div class="df ac icon-profit"><img src="img/icon-profit.png"><p class="c-black">挖矿收益</p><span class="font12 c-gray">（持续在线挂机即可获得）</span></div>
-			<div class="font18 c-red font-bold">0.00259元</div>
-		</div>
-		<section class="groupManagement df jsb">
-			<a href="#" class="groupBtn wxGroup flex-1 df ac jc"><img src="img/wx-icon.png"><p>微信群管理</p></a>
-			<a href="#" class="groupBtn freeGroup flex-1 df ac jc"><img src="img/group-icon.png"><p>免费加群</p></a>
-		</section>
-		<section class="banner df jsb">
-			<a href="#" class="flex-1"><img src="img/banner1.png"/></a>
-			<a href="#" class="flex-1"><img src="img/banner2.png"/></a>
-		</section>
-		<section class="menuList">
-			<ul class="df fw">
-				<li>
-					<a href="#" class="df jc ac fc">
-						<img src="img/menu-icon1.png" />
-						<p>双倍卡</p>
+		<!--barIcon-->
+		<div class="barIcon">
+			<ul class="clearfix">
+				<li class="active">
+					<a href="#">
+						<img width="20" src="img/indexImg/bar-icon1.png">
+						<img width="20" src="img/indexImg/bar-icon1-hover.png">
+						<p>首页</p>
 					</a>
 				</li>
-				<li>
-					<a href="#" class="df jc ac fc">
-						<img src="img/menu-icon2.png" />
-						<p>收益记录</p>
+				<li class="">
+					<a href="#">
+						<img width="20" src="img/indexImg/bar-icon2.png">
+						<img width="20" src="img/indexImg/bar-icon2-hover.png">
+						<p>自动推广</p>
 					</a>
 				</li>
-				<li>
-					<a href="#" class="df jc ac fc">
-						<img src="img/menu-icon3.png" />
-						<p>提现记录</p>
+				<li class="">
+					<a href="#">
+						<img width="20" src="img/indexImg/bar-icon3.png">
+						<img width="20" src="img/indexImg/bar-icon3-hover.png">
+						<p>手动推广</p>
 					</a>
 				</li>
-				<li>
-					<a href="#" class="df jc ac fc">
-						<img src="img/menu-icon4.png" />
-						<p>多号挂机</p>
-					</a>
-				</li>
-				<li>
-					<a href="#" class="df jc ac fc">
-						<img src="img/menu-icon5.png" />
-						<p>修改密码</p>
-					</a>
-				</li>
-				<li>
-					<a href="#" class="df jc ac fc">
-						<img src="img/menu-icon6.png" />
-						<p>新手教程</p>
-					</a>
-				</li>
-				<li>
-					<a href="#" class="df jc ac fc">
-						<img src="img/menu-icon7.png" />
-						<p>新手视频</p>
-					</a>
-				</li>
-				<li>
-					<a href="#" class="df jc ac fc">
-						<img src="img/menu-icon8.png" />
-						<p>常见问题</p>
-					</a>
-				</li>
-				<li>
-					<a href="#" class="df jc ac fc">
-						<img src="img/menu-icon9.png" />
-						<p>联系客服</p>
-					</a>
-				</li>
-				<li>
-					<a href="#" class="df jc ac fc">
-						<img src="img/menu-icon10.png" />
-						<p>退出登录</p>
-					</a>
-				</li>
-				<li>
-					<a href="#" class="df jc ac fc">
-						<img src="img/menu-icon11.png" />
-						<p>挖矿说明</p>
+				<li class="">
+					<a href="#">
+						<img width="20" src="img/indexImg/bar-icon4.png">
+						<img width="20" src="img/indexImg/bar-icon4-hover.png">
+						<p>个人中心</p>
 					</a>
 				</li>
 			</ul>
-		</section>
+		</div>
 	</section>
-	<script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
-	<script type="text/javascript">
-		$(function(){
+	<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+	<script type="text/javascript" src="js/swiper.min.js"></script>
+	<!-- Initialize Swiper -->
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+		  spaceBetween:0,
+		  centeredSlides: true,
+		  autoplay: {
+			delay: 2500,
+			disableOnInteraction: false,
+		  },
+		  pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		  }
 		});
-	</script>	
+	</script>
 	</body>
 </html>

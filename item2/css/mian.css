@@ -2,7 +2,7 @@ header {
 	color: #fff;
 	background:linear-gradient(90deg,rgba(48,128,212,1),rgba(108,67,208,1));
 	width: 100%;
-	height: 44px;
+	height: 45px;
 	padding: 0 15px;
 	position: fixed;
     top: 0;
@@ -18,11 +18,16 @@ header p{
 }
 header a img{
 	width: 8px;
+}
+.opacity-0{
 	opacity: 0;
 }
 .content{
 	padding-top: 44px;
 	padding-bottom:53px;
+}
+.contentTop{
+	padding-top: 0;
 }
 .state{
 	height: 50px;
@@ -80,6 +85,8 @@ header a img{
 	width: calc(100%/4);
 	float: left;
 	text-align: center;
+	margin-bottom: 10px;
+    height: 70px;
 }
 .extend ul li a{
 	color: #666;
@@ -162,4 +169,124 @@ header a img{
 }
 .barIcon ul li.active a p{
 	color: #333;
+}
+/*游戏收益详情*/
+.yxsy ul li{
+	border-bottom: 1px solid #eee;
+}
+.yxsy ul li p{
+	width: calc(100%/4);
+	float: left;
+    background: #fff;
+	padding: 15px 4px;
+    text-align: center;
+}
+.yxsy ul li:first-child p{
+	color: #333;
+}
+.zstd .search{
+	background: #fff;
+	border: 1px solid #1173d4;
+    border-radius: 6px;
+    margin: 10px 0;
+}
+.zstd .search input{
+	height: 38px;
+    border-radius: 6px;
+    border: none;
+    text-indent: 10px;
+	width: 85%;
+	color: #333;
+}
+.zstd .search a{
+	border-left: 1px solid #1173d4;
+    margin: 5px;
+    width: 15%;
+	text-align: center;
+}
+.zstd ul{
+	padding: 10px;
+	background: #fff;
+	border-radius: 6px;
+}
+.zstd ul li{
+	padding: 0 0 20px 0;
+}
+.zstd ul li:first-child p{
+	color: #1173d4;
+	font-size: 14px;
+}
+.zstd ul li p{
+	font-size: 12px;
+	flex: 1;
+	text-align: center;
+}
+
+/*自动推广*/
+.automaticTitle{
+	background-image: url(../img/automatic/automaticBg.png);
+	background-repeat: no-repeat;
+	height: 180px;
+	width: 100%;
+    background-size: contain;
+}
+.automaticList ul{
+	padding: 20px 0 0 0;
+}
+.automaticList ul li{
+	border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.automaticList ul li p:first-child{
+	font-size: 16px;
+	padding-bottom: 5px;
+    color: #333;
+}
+.automaticList ul li:last-child{
+	border-bottom: none;
+}
+.automaticList ul li img{
+	margin-right: 10px;
+}
+/*手动推广*/
+.manual ul li{
+    background: #fff;
+    border-radius: 6px;
+	padding: 15px 10px;
+	margin-bottom: 15px;
+}
+.manual ul li .leftImg{
+	position: relative;
+}
+.manual ul li .leftImg>img {
+	border-radius: 5px;
+}
+.manual ul li .leftImg .manualIcon{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.manual ul li .text{
+	padding: 0 20px 0 10px;
+}
+.manual ul li .text p:first-child{
+	color: #333;
+}
+.manual ul li .text p:last-child{
+	color: #999;
+	font-size: 12px;
+	line-height: 16px;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.manual ul li a .right{
+	font-size: 12px;
+    display: block;
+    width: 210px;
+    padding: 0;
+    text-align: center;
 }

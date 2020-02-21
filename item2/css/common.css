@@ -18,6 +18,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+a{
+	color: #666;
+}
 
 h1,
 h2,
@@ -40,12 +43,16 @@ textarea {
 fieldset,
 img {
 	border: 0;
+	vertical-align: middle;
 }
 
 a {
 	text-decoration: none;
 	background: none;
 	 -webkit-tap-highlight-color: transparent; outline: none;
+}
+.underline{
+	text-decoration: underline;
 }
 
 ul,
@@ -177,6 +184,9 @@ ol {
 .font12 {
 	font-size: 12px;
 }
+.font14 {
+	font-size: 14px;
+}
 .font15 {
 	font-size: 15px!important;
 }
@@ -226,6 +236,9 @@ ol {
 .p-l-r-10{
 	padding: 0 10px;
 }
+.p-l-r-15{
+	padding: 0 15px;
+}
 .p-b-15{
 	padding-bottom: 15px;
 }
@@ -262,6 +275,9 @@ ol {
 .m-b-25{
 	margin-bottom: 25px;
 }
+.m-b-20{
+	margin-bottom: 20px;
+}
 
 .bg-white{
 	background: white!important;
@@ -291,11 +307,32 @@ ol {
 	color: transparent;
 }
 .grayBtn,
-.blueBtn{
+.blueBtn,
+.orangeBtn,
+.purpleBtn,
+.redBtn,
+.greenBtn,
+.yellowBtn,
+.gradualBtn{
 	color: #fff;
 	border-radius: 6px;
 	padding: 1px 20px;
 	
+}
+.redBtn{
+	background: #FA3C31;
+}
+.yellowBtn{
+	background: #FEAF26;
+}
+.greenBtn{
+	background:#43C845;
+}
+.orangeBtn{
+	background: #FD7D1A;
+}
+.purpleBtn{
+	background: #694EFF;
 }
 .grayBtn{
 	background: #999;
@@ -305,9 +342,22 @@ ol {
 	border: 1px solid #1173d4;
 	
 }
+.gradualBtn{
+	background:linear-gradient(90deg,rgba(48,128,212,1),rgba(108,67,208,1));
+}
 .blockBtn{
 	border-radius: 200px;
     height: 40px;
+}
+.radiusBtn{
+	border-radius: 200px;	
+}
+.radiusBtnSmall{
+	border-radius: 6px;	
+}
+.smallBtn{
+	height: 28px;
+    line-height: 28px;
 }
 .lineBtn{
 	background: #fff;
@@ -320,6 +370,9 @@ ol {
     border-radius: 6px;
 	height: 100%;
 
+  }
+  .border-radius{
+	  border-radius: 100%;
   }
   .swiper-slide {
 	text-align: center;

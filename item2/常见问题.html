@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/mian.css" />
+	    <title>app</title>
+	</head>
+	<body class="bg-white">
+	<section>
+		<header class="df ac jsb jc">
+			<a href="javascript:history.go(-1);" class="df flex-1"><img src="../item2/img/arrow.png"/></a>
+			<p class="flex-1 text-center">常见问题</p>
+			<a href="#" class="flex-1 text-right"></a>
+		</header>
+		<section class="content">
+			<div class="commonProblem">
+				<div class="p-l-r-15">
+					<ul>
+						<li class="df">
+							<p><img width="30" src="img/automatic/commonProblem-icon.png"/><span>Q1</span></p>
+							<div class="textList width100">
+								<p class="df ac jsb">
+									<span class="line-clamp-1">这里是问题这里是问题这里是问题这里是问题这里是问题？</span>
+									<img class="" width="6" height="11" src="img/all-arrow.png"/>
+								</p>
+								<p class="font12 textCont">
+									这里是问题答案这里是问题答案这里是问题答案这里是问题答案这里是问题答案这里是问题答案这里是问题答案这里是问题答案这里是问题答案这里是问题答案这里是问题答案这里是问题答案这里是问题答案这里是问题答案这里是问题答案。
+								</p>
+							</div>
+						</li>
+						<li class="df">
+							<p><img width="30" src="img/automatic/commonProblem-icon.png"/><span>Q2</span></p>
+							<div class="textList width100">
+								<p class="df ac jsb">
+									<span class="line-clamp-1">这里是问题？</span>
+									<img class="" width="6" height="11" src="img/all-arrow.png"/>
+								</p>
+								<p class="font12 textCont">
+									这里是问题答案这里是问题答案这里是问题答案这里是问题答案这里是问题答案这里是问题答案这里是问题答案这里是问题答案这里是问题答案这里是问题答案这里是问题答案这里是问题答案这里是问题答案这里是问题答案这里是问题答案。
+								</p>
+							</div>
+						</li>
+						<li class="df">
+							<p><img width="30" src="img/automatic/commonProblem-icon.png"/><span>Q3</span></p>
+							<div class="textList width100">
+								<p class="df ac jsb">
+									<span class="line-clamp-1">这里是问题？</span>
+									<img class="" width="6" height="11" src="img/all-arrow.png"/>
+								</p>
+								<p class="font12 textCont">
+									这里是问题答案这里是问题答案这里是问题答案这里是问题答案这里是问题答案这里是问题答案这里是问题答案这里是问题答案这里是问题答案这里是问题答案这里是问题答案这里是问题答案这里是问题答案这里是问题答案这里是问题答案。
+								</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<!--barIcon-->
+		<div class="barIcon">
+			<ul class="clearfix">
+				<li class="">
+					<a href="index.html">
+						<img width="20" src="img/indexImg/bar-icon1.png">
+						<img width="20" src="img/indexImg/bar-icon1-hover.png">
+						<p>首页</p>
+					</a>
+				</li>
+				<li class="active">
+					<a href="自动推广.html">
+						<img width="20" src="img/indexImg/bar-icon2.png">
+						<img width="20" src="img/indexImg/bar-icon2-hover.png">
+						<p>自动推广</p>
+					</a>
+				</li>
+				<li class="">
+					<a href="手动推广.html">
+						<img width="20" src="img/indexImg/bar-icon3.png">
+						<img width="20" src="img/indexImg/bar-icon3-hover.png">
+						<p>手动推广</p>
+					</a>
+				</li>
+				<li class="">
+					<a href="个人中心.html">
+						<img width="20" src="img/indexImg/bar-icon4.png">
+						<img width="20" src="img/indexImg/bar-icon4-hover.png">
+						<p>个人中心</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			 $('.commonProblem ul li').on('click', function() {
+	            var i = $(this).index();
+	            $(this).toggleClass('active');
+	            $(this).find('.textCont').slideToggle();
+	        })
+		});
+	</script>	
+	</body>
+</html>

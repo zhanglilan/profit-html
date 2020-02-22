@@ -7,64 +7,60 @@
 		<link rel="stylesheet" href="css/mian.css" />
 	    <title>app</title>
 	</head>
-	<body>
+	<body  class="bg-white">
 	<section>
 		<header class="df ac jsb jc">
 			<a href="javascript:history.go(-1);" class="df flex-1"><img src="../item2/img/arrow.png"/></a>
-			<p class="flex-1 text-center">直属徒弟详情</p>
-			<a href="获取收徒链接.html" class="flex-1 text-right">获取收徒链接</a>
+			<p class="flex-1 text-center">发送频率设置</p>
+			<a href="#" class="flex-1 text-right"></a>
 		</header>
 		<section class="content">
-			<div class="zstd p-l-r-10">
-				<div class="df search">
-					<input type="text" placeholder="请输入要搜索的徒弟的ID">
-					<a href="#"><img width="14" src="img/search.png"/></a>
-				</div>
-				<ul class="clearfix" style="display: block;">
-					<li class="df ac jc">
-						<p>头像</p>
-						<p>昵称</p>
-						<p>ID</p>
-						<p>贡献收入</p>
-					</li>
-					<li class="df ac jc">
-						<p><img class="border-radius" width="35" height="35" src="img/user.png"/></p>
-						<p>这里是昵称</p>
-						<p>123456780</p>
-						<p>345677</p>
-					</li>
-					<li class="df ac jc">
-						<p><img class="border-radius" width="35" height="35" src="img/user.png"/></p>
-						<p>这里是昵称这里是昵称</p>
-						<p>123456780</p>
-						<p>345677</p>
-					</li>
-					<li class="df ac jc">
-						<p><img class="border-radius" width="35" height="35" src="img/user.png"/></p>
-						<p>这里是昵称这里是昵称</p>
-						<p>123456780</p>
-						<p>345677</p>
-					</li>
-				</ul>
-				<!--无数据详情-->
-				<div class="df jc text-center m-t-35" style="display: none;">
-					<img class="m-b-25" width="130" src="img/none.png"/>
-					<p>您暂时没有徒弟哦！</p>
-					<a href="#" class="c-red underline">点击此处去推广</a>
+			<div class="rate">
+				<div class="p-l-r-15">
+					<ul>
+						<li class="df  ac jsb active">
+							<p>1小时/次</p>
+							<div>
+								<img width="12" src="img/automatic/hollow.png">
+								<img width="12" src="img/automatic/solid.png">
+							</div>
+						</li>
+						<li class="df  ac jsb">
+							<p>2小时/次</p>
+							<div>
+								<img width="12" src="img/automatic/hollow.png">
+								<img width="12" src="img/automatic/solid.png">
+							</div>
+						</li>
+						<li class="df  ac jsb">
+							<p>6小时/次</p>
+							<div>
+								<img width="12" src="img/automatic/hollow.png">
+								<img width="12" src="img/automatic/solid.png">
+							</div>
+						</li>
+						<li class="df  ac jsb">
+							<p>12小时/次</p>
+							<div>
+								<img width="12" src="img/automatic/hollow.png">
+								<img width="12" src="img/automatic/solid.png">
+							</div>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</section>
 		<!--barIcon-->
 		<div class="barIcon">
 			<ul class="clearfix">
-				<li class="active">
+				<li class="">
 					<a href="index.html">
 						<img width="20" src="img/indexImg/bar-icon1.png">
 						<img width="20" src="img/indexImg/bar-icon1-hover.png">
 						<p>首页</p>
 					</a>
 				</li>
-				<li class="">
+				<li class="active">
 					<a href="自动推广.html">
 						<img width="20" src="img/indexImg/bar-icon2.png">
 						<img width="20" src="img/indexImg/bar-icon2-hover.png">
@@ -89,8 +85,12 @@
 		</div>
 	</section>
 	<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
-	<!-- Initialize Swiper -->
 	<script>
+		$(function(){
+			 $('.rate ul li').on('click', function() {
+	            $(this).addClass('active').siblings().removeClass('active');
+	        })
+		});
 	</script>
 	</body>
 </html>

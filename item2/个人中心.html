@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/mian.css" />
+		<link rel="stylesheet" href="css/layer.css" />
+	    <title>app</title>
+	</head>
+	<body class="bg-white">
+	<section>
+		<header class="df ac jsb jc">
+			<a href="javascript:history.go(-1);" class="df flex-1 opacity-0"><img src="../item2/img/arrow.png"/></a>
+			<p class="flex-1 text-center">个人中心</p>
+			<a href="#" class="flex-1 text-right"></a>
+		</header>
+		<section class="content">
+			<div class="personalCenter clearfix">
+				<div class="top">
+					<div class="topCont">
+						<p>我的ID：1234567 </p>
+						<p>我的余额</p>
+						<p class="font30 c-blue font-bold p-t-10 p-b-5"><span class="font12">￥</span>103.00</p>
+						<div class="df text-center">
+							<div class="flex-1 border-right">
+								<p class="c-blue">23456</p>
+								<p>昨日团队收益</p>
+							</div>
+							<div class="flex-1">
+								<p class="c-blue">23456</p>
+								<p>昨日合伙人收益</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="p-l-r-15">
+					<div class="df m-t-75">
+						<a id="cash" class="blueBtn blockBtn flex-1 df ac jc m-r-10"><img width="15" src="img/personal/personal-icon1.png">&nbsp;&nbsp;立即提现</a>
+						<a href="收入明细.html" class="blueBtn blockBtn lineBtn flex-1 df ac jc"><img width="15"  src="img/personal/personal-icon2.png">&nbsp;&nbsp;收入明细</a>
+					</div>
+					<ul>
+						<li>
+							<a href="修改密码.html" class="df ac jsb">
+								<div class="df ac">
+									<img width="18" src="img/personal/personal-icon3.png"/>
+									<p>修改密码</p>
+								</div>
+								<img class="" width="8" height="13" src="img/all-arrow.png">
+							</a>
+						</li>
+						<li>
+							<a id="zhPwd" class="df ac jsb">
+								<div class="df ac">
+									<img width="18" src="img/personal/personal-icon4.png"/>
+									<p>找回密码</p>
+								</div>
+								<img class="" width="8" height="13" src="img/all-arrow.png">
+							</a>
+						</li>
+						<li>
+							<a href="问题反馈.html" class="df ac jsb">
+								<div class="df ac">
+									<img width="18" src="img/personal/personal-icon5.png"/>
+									<p>问题反馈</p>
+								</div>
+								<img class="" width="8" height="13" src="img/all-arrow.png">
+							</a>
+						</li>
+						<li>
+							<a id="bdAccounts" class="df ac jsb">
+								<div class="df ac">
+									<img width="18" src="img/personal/personal-icon6.png"/>
+									<p>绑定提现账号</p>
+								</div>
+								<img class="" width="8" height="13" src="img/all-arrow.png">
+							</a>
+						</li>
+						<li>
+							<a href="登录.html" class="df ac jsb">
+								<div class="df ac">
+									<img width="18" src="img/personal/personal-icon7.png"/>
+									<p>切换账号</p>
+								</div>
+								<img class="" width="8" height="13" src="img/all-arrow.png">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<!--barIcon-->
+		<div class="barIcon">
+			<ul class="clearfix">
+				<li class="">
+					<a href="index.html">
+						<img width="20" src="img/indexImg/bar-icon1.png">
+						<img width="20" src="img/indexImg/bar-icon1-hover.png">
+						<p>首页</p>
+					</a>
+				</li>
+				<li class="">
+					<a href="自动推广.html">
+						<img width="20" src="img/indexImg/bar-icon2.png">
+						<img width="20" src="img/indexImg/bar-icon2-hover.png">
+						<p>自动推广</p>
+					</a>
+				</li>
+				<li class="">
+					<a href="手动推广.html">
+						<img width="20" src="img/indexImg/bar-icon3.png">
+						<img width="20" src="img/indexImg/bar-icon3-hover.png">
+						<p>手动推广</p>
+					</a>
+				</li>
+				<li class="active">
+					<a href="个人中心.html">
+						<img width="20" src="img/indexImg/bar-icon4.png">
+						<img width="20" src="img/indexImg/bar-icon4-hover.png">
+						<p>个人中心</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<!--弹窗-->
+	<section class="popup">
+		<div class="popupContent df fc jc ac">
+			<div class="popupContentImg">
+				<p class="font20">找回成功</p>
+				<img width="133" class="m-t-25 m-b-25"  src="img/success-1.png"/>
+				<p class="m-b-25">
+					您的密码已经发送到您绑定的微信上,请注意查收微信信息
+				</p>
+				<a href="个人中心.html" class="blueBtn blockBtn flex-1 df ac jc m-l-10">好 的</a>
+			</div>
+			<a id="close"><img width="36" class="closeImg" src="img/colse.png"/></a>
+		</div>
+	</section>
+	<!--弹窗2-->
+	<section class="popup-2">
+		<div class="popupContent df fc jc ac">
+			<div class="popupContentImg">
+				<p class="font18">请选择绑定方式</p>
+				<ul>
+					<li id="binding">
+						<a href="#" class="df jsb ac">
+							<div>
+								<p>方式一：自动绑定</p>
+								<p class="font12">(限本账号挂机且在线微信)</p>
+							</div>
+							<img width="6" height="10" src="img/all-arrow.png">
+						</a>
+					</li>
+					<li>
+						<a href="关注微信公众号.html" class="df jsb ac">
+							<div>
+								<p>方式二：手动绑定</p>
+								<p class="font12">(绑定其他微信）</p>
+							</div>
+							<img width="6" height="10" src="img/all-arrow.png">
+						</a>
+					</li>
+					<li>
+						<a href="绑定其他账号.html" class="df jsb ac">
+							<div>
+								<p>方式三：绑定其它账号</p>
+								<p class="font12">(微信被封可绑定平台其它账号)</p>
+							</div>
+							<img width="6" height="10" src="img/all-arrow.png">
+						</a>
+					</li>
+				</ul>
+			</div>
+			<a id="close"><img width="36" class="closeImg" src="img/colse.png"/></a>
+		</div>
+	</section>
+	<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+	<script type="text/javascript" src="js/layer.js"></script>
+	<script>
+		$(function(){
+			$('#cash').on('click',function(){
+				layer.msg('立即提现成功!');
+			});
+			$('#binding').on('click',function(){
+				layer.msg('绑定成功，五分钟后可以提现!');
+			});
+			$("#zhPwd").on("click",function(){
+				$(".popup").show();
+			});
+			$(".closeImg").on("click",function(){
+				$(".popup,.popup-2").hide();
+			});
+			$("#bdAccounts").on("click",function(){
+				$(".popup-2").show();
+			})
+		})
+	</script>
+	</body>
+</html>

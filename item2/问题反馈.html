@@ -5,44 +5,47 @@
 	    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	    <link rel="stylesheet" href="css/common.css" />
 		<link rel="stylesheet" href="css/mian.css" />
-		<link rel="stylesheet" href="css/swiper.min.css"/>
+		<link rel="stylesheet" href="css/layer.css" />
 	    <title>app</title>
 	</head>
-	<body>
+	<body class="bg-white">
 	<section>
 		<header class="df ac jsb jc">
 			<a href="javascript:history.go(-1);" class="df flex-1"><img src="../item2/img/arrow.png"/></a>
-			<p class="flex-1 text-center">游戏收益详情</p>
-			<a href="#" class="flex-1 text-right"></a>
+			<p class="flex-1 text-center">问题反馈</p>
+			<a href="#" class="flex-1 text-right">提交</a>
 		</header>
 		<section class="content">
-			<div class="yxsy">
-				<ul>
-					<li class="df jc">
-						<p>游戏名称</p>
-						<p>昨日直营业绩</p>
-						<p>今日直营业绩</p>
-						<p>累计直营业绩</p>
-					</li>
-					<li class="df jc">
-						<p>这是游戏名称名称</p>
-						<p>123456</p>
-						<p>3454657</p>
-						<p>32424252</p>
-					</li>
-					<li class="df jc">
-						<p>这是游戏名称</p>
-						<p>123456</p>
-						<p>3454657</p>
-						<p>32424252</p>
-					</li>
-				</ul>
+			<div class="feedback clearfix">
+				<div class="p-l-r-15">
+					<div class="title">分类标签</div>
+					<ul class="clearfix">
+						<li class="active">
+							<a>功能建议</a>
+						</li>
+						<li>
+							<a>功能建议</a>
+						</li>
+						<li>
+							<a>功能建议</a>
+						</li>
+						<li>
+							<a>功能建议</a>
+						</li>
+					</ul>
+					<form>
+						<div class="title">反馈内容</div>
+						<textarea class="width100" placeholder="您可以在这里输入内容…" rows="7"></textarea>
+						<div class="title">联系方式</div>
+						<input class="width100" type="text" placeholder="请输入您的电话号码/微信号">
+					</form>
+				</div>
 			</div>
 		</section>
 		<!--barIcon-->
 		<div class="barIcon">
 			<ul class="clearfix">
-				<li class="active">
+				<li class="">
 					<a href="index.html">
 						<img width="20" src="img/indexImg/bar-icon1.png">
 						<img width="20" src="img/indexImg/bar-icon1-hover.png">
@@ -63,7 +66,7 @@
 						<p>手动推广</p>
 					</a>
 				</li>
-				<li class="">
+				<li class="active">
 					<a href="个人中心.html">
 						<img width="20" src="img/indexImg/bar-icon4.png">
 						<img width="20" src="img/indexImg/bar-icon4-hover.png">
@@ -74,8 +77,18 @@
 		</div>
 	</section>
 	<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
-	<!-- Initialize Swiper -->
+	<script type="text/javascript" src="js/layer.js"></script>
 	<script>
+		$(function(){
+			$('#cash').on('click',function(){
+				layer.msg('提现成功!');
+			});
+			$('.personalCenterTab a').on('click',function() {
+	            var i = $(this).index();
+	            $(this).addClass('active').siblings().removeClass('active');
+	            $(".personaTab>.personaTabList").eq(i).show().siblings().hide();
+	        })
+		})
 	</script>
 	</body>
 </html>

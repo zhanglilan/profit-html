@@ -5,44 +5,46 @@
 	    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	    <link rel="stylesheet" href="css/common.css" />
 		<link rel="stylesheet" href="css/mian.css" />
-		<link rel="stylesheet" href="css/swiper.min.css"/>
+		<link rel="stylesheet" href="css/layer.css" />
 	    <title>app</title>
 	</head>
-	<body>
+	<body class="bg-white">
 	<section>
 		<header class="df ac jsb jc">
 			<a href="javascript:history.go(-1);" class="df flex-1"><img src="../item2/img/arrow.png"/></a>
-			<p class="flex-1 text-center">游戏收益详情</p>
+			<p class="flex-1 text-center">绑定其他账号</p>
 			<a href="#" class="flex-1 text-right"></a>
 		</header>
 		<section class="content">
-			<div class="yxsy">
-				<ul>
-					<li class="df jc">
-						<p>游戏名称</p>
-						<p>昨日直营业绩</p>
-						<p>今日直营业绩</p>
-						<p>累计直营业绩</p>
-					</li>
-					<li class="df jc">
-						<p>这是游戏名称名称</p>
-						<p>123456</p>
-						<p>3454657</p>
-						<p>32424252</p>
-					</li>
-					<li class="df jc">
-						<p>这是游戏名称</p>
-						<p>123456</p>
-						<p>3454657</p>
-						<p>32424252</p>
-					</li>
-				</ul>
+			<div class="otherAccounts clearfix">
+				<div class="p-l-r-15">
+					<form>
+						<dl>
+							<dt>账号</dt>
+							<dd><input type="text" placeholder="请输入要绑定的账号"></dd>
+						</dl>
+						<dl>
+							<dt>密码</dt>
+							<dd><input type="password" placeholder="请输入要绑定账号的密码"></dd>
+						</dl>
+						<dl>
+							<dt>验证码</dt>
+							<dd>
+								<div class="df ac jsb">
+									<input type="text" placeholder="请输入验证码">
+									<img width="80" src="img/login/verification.png"/>
+								</div>
+							</dd>
+						</dl>
+						<button type="button" class="gradualBtn blockBtn df ac jc width100 m-t-35">确 定</button>
+					</form>
+				</div>
 			</div>
 		</section>
 		<!--barIcon-->
 		<div class="barIcon">
 			<ul class="clearfix">
-				<li class="active">
+				<li class="">
 					<a href="index.html">
 						<img width="20" src="img/indexImg/bar-icon1.png">
 						<img width="20" src="img/indexImg/bar-icon1-hover.png">
@@ -63,7 +65,7 @@
 						<p>手动推广</p>
 					</a>
 				</li>
-				<li class="">
+				<li class="active">
 					<a href="个人中心.html">
 						<img width="20" src="img/indexImg/bar-icon4.png">
 						<img width="20" src="img/indexImg/bar-icon4-hover.png">
@@ -74,8 +76,6 @@
 		</div>
 	</section>
 	<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
-	<!-- Initialize Swiper -->
-	<script>
-	</script>
+	<script type="text/javascript" src="js/layer.js"></script>
 	</body>
 </html>

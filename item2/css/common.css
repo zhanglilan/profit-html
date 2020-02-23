@@ -63,7 +63,9 @@ ol {
 :focus {
 	outline: none;
 }
-
+button{
+	border: none;
+}
 
 .clearfix {
 	zoom: 1;
@@ -225,6 +227,9 @@ ol {
 }
 .p-20{
 	padding: 15px;
+}
+.p-b-5{
+	padding-bottom: 5px;
 }
 .p-t-b-10{
 	padding: 10px 0;
@@ -423,4 +428,10 @@ ol {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
+}
+
+@media screen and (max-width: 320px){
+	.blueBtn{
+		padding: 1px 5px;
+	}
 }

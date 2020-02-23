@@ -57,7 +57,17 @@
 						<div class="text-center space">
 							<div class="df jsb">
 								<div class="flex-1">
-									<p class="font12 c-gray">今日合伙人收益<img class="tip" class="p-l-10" width="11" src="img/indexImg/index-icon2.png"/></p>
+									<div class="tipPopup" class="font12 c-gray">
+										今日合伙人收益<img class="tip" class="p-l-10" width="11" src="img/indexImg/index-icon2.png"/>
+										<div class="indexInfo hide">
+											<p class="font-bold text-center p-t-b-10">今日合伙人收益</p>
+											<p>达到合伙人条件后，你永久获的合伙徒弟所有收益的百分之10的额外奖励，徒弟收益不受影响。</p>
+											<p class="font-bold text-center p-t-b-10">什么是合伙人？</p>
+											<p>达到合伙人条件后，你和你的直接徒弟以后邀请的所有的、无限层次的徒子徒孙，都是你的合伙徒弟</p>
+											<p class="font-bold text-center p-t-b-10">怎样成为合伙人：</p>
+											<p>成功提现的直接徒弟达到50人后，自动升级为合伙人（每日24点自动结算）。</p>
+										</div>
+									</div>
 									<p class="font16 c-blue font-bold">32.14</p>
 								</div>
 								<div class="flex-1">
@@ -69,7 +79,13 @@
 						<div class="text-center space">
 							<div class="df jsb">
 								<div class="flex-1">
-									<p class="font12 c-gray">今日直接徒弟收益<img class="tip" class="p-l-10" width="11" src="img/indexImg/index-icon2.png"/></p>
+									<div class="tipPopup" class="font12 c-gray">
+										今日直接徒弟收益<img class="tip" class="p-l-10" width="11" src="img/indexImg/index-icon2.png"/>
+										<div class="indexInfo hide">
+											<p class="font-bold text-center p-t-b-10">今日直接徒弟收益</p>
+											<p> 你永久获的直接徒弟所有收益30%的额外奖励，直接徒弟收益不受影响</p>
+										</div>
+									</div>
 									<p class="font16 c-blue font-bold">32.14</p>
 								</div>
 								<div class="flex-1">
@@ -81,11 +97,23 @@
 						<div class="text-center space">
 							<div class="df jsb">
 								<div class="flex-1">
-									<p class="font12 c-gray">今日直营收益<img class="tip" class="p-l-10" width="11" src="img/indexImg/index-icon2.png"/></p>
+									<div class="tipPopup"  class="font12 c-gray">
+										今日直营收益<img class="tip" class="p-l-10" width="11" src="img/indexImg/index-icon2.png"/>
+										<div class="indexInfo hide">
+											<p class="font-bold text-center p-t-b-10">今日直营收益</p>
+											<p>直营收益=直营业绩*0.0055，例如：每日直营业绩为20000时，每日直营收益为 20000*0.0055=110元</p>
+										</div>
+									</div>
 									<p class="font16 c-blue font-bold">32.14</p>
 								</div>
 								<div class="flex-1">
-									<p class="font12 c-gray">今日直营业绩<img class="tip" class="p-l-10" width="11" src="img/indexImg/index-icon2.png"/></p>
+									<div  class="tipPopup" class="font12 c-gray">
+										今日直营业绩<img class="tip" class="p-l-10" width="11" src="img/indexImg/index-icon2.png"/>
+										<div class="indexInfo hide">
+											<p class="font-bold text-center p-t-b-10">今日直营业绩</p>
+											<p>业绩是指你推广游戏玩家的流水情况，例如：某位玩家这把赢2000，下把输1000，业绩就是3000</p>
+										</div>
+									</div>
 									<p class="font16 c-blue font-bold">32.14</p>
 								</div>
 								<div class="flex-1">
@@ -209,6 +237,8 @@
 			</ul>
 		</div>
 	</section>
+	<!-- index弹窗背景 -->
+	<div class="indexPopup hide"></div>
 	<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
 	<script type="text/javascript" src="js/swiper.min.js"></script>
 	<!-- Initialize Swiper -->
@@ -225,6 +255,16 @@
 			clickable: true,
 		  }
 		});
+		$(function(){
+			$('.tipPopup').on('click',function(){
+				$('.indexPopup').show();
+				$(this).find('.indexInfo').show();
+			})
+			$('.indexPopup').on('click',function(){
+				$(this).hide();
+				$('.indexInfo').hide();
+			})
+		})
 	</script>
 	</body>
 </html>

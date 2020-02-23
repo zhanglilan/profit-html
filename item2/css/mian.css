@@ -17,7 +17,7 @@ header p{
     font-weight: 500;
 }
 header a img{
-	width: 8px;
+	width: 15px;
 }
 .opacity-0{
 	opacity: 0;
@@ -454,7 +454,149 @@ header a img{
     padding: 0;
     text-align: center;
 }
-.popup {
+/*个人中心*/
+.personalCenter .top{
+	height:100px;
+	background:linear-gradient(90deg,rgba(48,128,212,1),rgba(108,67,208,1));
+}
+.topCont{
+	background: url(../img/personal/personal-bg.png);
+	background-repeat: no-repeat;
+	height: 181px;
+	background-size: contain;
+	margin: 0 10px;
+	padding: 15px 20px;
+}
+.topCont .border-right{
+	border-right: 1px solid #1173d4;
+}
+.m-t-75{
+	margin-top: 75px;
+    margin-bottom: 25px;
+}
+.personalCenter ul li{
+	padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 15px;
+}
+.personalCenter ul li a div img{
+	margin-right: 5px;
+}
+.personalCenter ul li a div p{
+	color: #000;
+}
+.personalCenterTab{
+	border-bottom: 1px solid #eee;
+	padding-bottom: 10px;
+	margin-bottom: 15px;
+	padding-top: 20px;
+}
+.personalCenterTab a{
+	position: relative;
+}
+.personalCenterTab a.active::before{
+	content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -11px;
+    width: 30%;
+    height: 2px;
+    display: inline-block;
+    z-index: 1;
+    background: #1173d4;
+    transform: translate(-50%, 0);
+}
+.personaTabList ul li{
+	border-bottom: 1px solid #eee;
+	margin-bottom: 10px;
+	padding: 0 10px 10px 10px;
+}
+.personaTabList ul li>div>p:first-child{
+	color: #333;
+	font-weight: bold;
+}
+.personaTabList ul li>div>p:last-child{
+	font-size: 12px;
+}
+.personaTabList ul li>p{
+	font-size: 18px;
+	font-weight: bold;
+	color: #1173d4;
+}
+.personalCenter form{
+	padding-top: 20px;
+}
+.personalCenter form .pwdCont{
+	border-bottom: 1px solid #eee;
+	padding-bottom: 10px;
+	margin-bottom: 15px;
+}
+.feedback ul li{
+	padding: 0 10px;
+	width: calc(100%/3);
+	float: left;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.feedback ul li a{
+	background: #E1E1E1;
+	color: #1173d4;
+	border-radius:6px;
+	display: block;
+    padding: 6px 0;
+}
+.feedback ul li.active a{
+	background: #1173d4;
+	color: #fff;
+}
+.feedback textarea,
+.feedback input{
+	background: #E1E1E1;
+	border:1px solid #e1e1e1;
+	border-radius: 6px;
+	color: #333;
+	padding-left: 10px;
+}
+.feedback textarea{
+	padding-top: 10px;
+}
+.feedback input{
+	height: 40px;
+	line-height: 40px;
+}
+.personalCenter form .pwdCont p,
+.personalCenter form .pwdCont input{
+	font-size: 16px;
+	color: #333;
+}
+.wx-gzh .wxImg{
+    margin: 10px 20px;
+}
+.otherAccounts form{
+	padding: 25px 0;
+}
+.otherAccounts form dl{
+	border-bottom: 1px solid #eee;
+	padding-bottom: 10px;
+	margin-bottom: 15px;
+}
+.otherAccounts form dt{
+	float: left;
+    width: 55px;
+    font-weight: bold;
+    color: #333;
+    border-right: 1px solid #1173d4;
+	margin-right: 15px;
+	margin-top: 6px;
+}
+.otherAccounts form dd input{
+	border: none;
+    height: 35px;
+    line-height: 35px;
+    width: 75%;
+}
+.popup,
+.popup-2 {
 	display: none;
 	position: fixed;
 	top: 0;
@@ -465,24 +607,63 @@ header a img{
 	z-index: 10;
 }
 
-.popup .popupContent {
+.popup .popupContent,
+.popup-2 .popupContent {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: 80%;
 }
-.popup .popupContent .popupContentImg{
+.popup .popupContent .popupContentImg,
+.popup-2 .popupContent .popupContentImg{
 	background: #fff;
 	padding: 20px;
 	text-align: center;
 	border-radius: 10px;
 	width: 100%;
 }
-.popup .popupContent .closeImg {
+.popup .popupContent .closeImg,
+.popup-2 .popupContent .closeImg {
 	margin-top: 36px;
 }
-
+.popup-2 .popupContentImg p.font18{
+	border-bottom: 1px solid #1173d4;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.popup-2 ul li{
+	text-align: left;
+	border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.popup-2 ul li:last-child{
+	border-bottom: none;
+	margin-bottom: 0;
+}
+.indexPopup{
+    position: fixed;
+    background: rgba(0,0,0,0.8);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+.indexInfo{
+	padding: 20px;
+    background: #fff;
+    position: absolute;
+    z-index: 11;
+    width: 80%;
+    border-radius: 6px;
+    margin: auto;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	top: 50%;
+	text-align: left;
+}
 /*登录注册*/
 .login{
 	background: url(../img/login/loginBg.png) no-repeat;
@@ -529,7 +710,7 @@ header a img{
     right: 0;
     margin-right: 0;
 }
-.loginBtn>a{
+.loginBtn>button{
 	height: 40px;
     background: linear-gradient(0deg,rgba(0,104,183,1),rgba(101,164,255,1));
     border-radius: 42px;
@@ -539,8 +720,9 @@ header a img{
     color: #fff;
 	font-size: 16px;
 	margin-bottom: 10px;
+	border: none;
 }
-.registerBtn>a{
+.registerBtn>button{
 	background: #fff;
     border: 1px solid #1173d4;
     color: #1173d4;

@@ -434,4 +434,18 @@ button{
 	.blueBtn{
 		padding: 1px 5px;
 	}
+	.topCont{
+		padding: 5px 20px!important;
+		font-size: 12px;
+	}
+	.topCont .font30{
+		font-size: 25px;
+    	padding: 5px 0;
+	}
+	.personalCenter .m-t-75 {
+		margin-top: 50px;
+	}
+	.reBg .contImg img {
+		width: 300px;
+	}
 }

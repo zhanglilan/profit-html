@@ -198,18 +198,27 @@ header a img{
     padding-right: 20px;
 }
 /*游戏收益详情*/
+.yxsy ul {
+	padding: 10px 0;
+}
 .yxsy ul li{
 	border-bottom: 1px solid #eee;
+    margin: 0 15px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
-.yxsy ul li p{
-	width: calc(100%/4);
-	float: left;
-    background: #fff;
-	padding: 15px 4px;
-    text-align: center;
+.yxsy ul li>p{
+	text-align: center;
+	color: #1173d4;
+    border-bottom: 1px solid #eee;
+	padding: 5px 0;
+	margin-bottom: 10px;
 }
-.yxsy ul li:first-child p{
-	color: #333;
+.yxsy ul li>div .flex-1{
+	border-right: 1px solid #eee;
+}
+.yxsy ul li>div .flex-1:last-child {
+	border-right: none;
 }
 .zstd .search{
 	background: #fff;
@@ -731,4 +740,74 @@ header a img{
 	position: relative;
     top: -20px;
     font-size: 12px;
+}
+.reBg{
+	background: url(../img/login/reBg.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 2157px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.reBg>img{
+	padding-top: 52px;
+}
+.reBg form{
+	margin: 0 15px;
+	margin-top: 340px;
+}
+.loginBtn.reBtn>button {
+	background: #0067EF;
+}
+.reBg .contImg{
+	margin-top: 25px;
+}
+.reBg .contImg img{
+	margin-bottom: 30px;
+}
+.reBg .contImg img:last-child{
+	margin-bottom: 0;
+}
+.reBg .loginForm {
+    padding-bottom: 0;
+    position: relative;
+    background: #fff;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+.reBg .loginForm  input{
+	border-bottom: 0;
+}
+.reBg .loginForm  img {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.profit-p{
+	margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+.profit-p::before{
+	content:"";
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;
+	background: #1173d4;
+	display: inline-block;
+	margin-right: 5px;
+}
+.sysmBg{
+	background: #999999;
+    border-radius: 6px;
+    margin-top: 10px;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+.sysmBg>div{
+	padding: 10px;
+    background: #fff;
+    margin: 10px;
+    border-radius: 6px;
 }

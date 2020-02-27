@@ -454,5 +454,8 @@ button{
 	.reBg form {
 		margin-top: 150px!important;
 	}
+	#longinTip img{
+		padding: 20px 10px!important;
+	}
 }
 

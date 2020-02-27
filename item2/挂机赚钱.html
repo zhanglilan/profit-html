@@ -16,8 +16,9 @@
 		</header>
 		<section class="content">
 			<!--登录提示信息-->
-			<div class="df jc ac" style="display: none;">
+			<div id="longinTip" class="df jc ac" style="display: none;">
 				<img width="320" src="img/loginTip.png">
+				<a href="index.html" class="blueBtn blockBtn radiusBtnSmall flex-1 df ac jc">我知道了</a>
 			</div>
 			<div class="onHook" style="display: block;">
 				<div class="p-l-r-15">
@@ -47,11 +48,11 @@
 					</p>
 					<div class="df jc m-t-25 m-b-35">
 						<img width="195" height="195" src="http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg">
-						<div class="load" style="display: block;">
+						<div id="qrCode" class="load" style="display: block;">
 							<img width="93" src="img/Load.png"/>
 						</div>
 					</div>
-					<a href="#" class="gradualBtn blockBtn df ac jc">已拍照，打开微信扫码</a>
+					<a href="index.html" class="gradualBtn blockBtn df ac jc">已拍照，打开微信扫码</a>
 				</div>
 			</div>
 		</section>
@@ -90,7 +91,7 @@
 		</div>
 	</section>
 	<!--登录失败弹窗-->
-	<section class="popup" style="display: none;">
+	<section id="loginPop" class="popup" style="display: none;">
 		<div class="popupContent df fc jc ac">
 			<div class="popupContentImg">
 				<p class="font20 c-black p-b-15">登录失败</p>
@@ -102,7 +103,7 @@
 					2、点击频率过快；<br>
 					<span class="c-red">3、微信被限制，请24小时后再试；</span><br>
 					</p>
-					<a href="#" class="blueBtn blockBtn flex-1 df ac jc m-l-10">确 认</a>
+					<a href="index.html" class="blueBtn blockBtn flex-1 df ac jc m-l-10">确 认</a>
 				</div>
 			</div>
 			<a id="close"><img width="36" class="closeImg" src="img/colse.png"/></a>
@@ -113,7 +114,15 @@
 		$(function(){
 			$(".closeImg").on("click",function(){
 				$(".popup").hide();
-			})
+			});
+			setTimeout(function(){
+				$('#qrCode,.onHook').hide();
+				$('#longinTip').show();
+			},5000);
+			setTimeout(function(){
+				$('#loginPop,.onHook').show();
+				$('#longinTip').hide();
+			},10000);
 		});
 	</script>	
 	</body>

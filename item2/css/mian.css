@@ -822,3 +822,18 @@ header a img{
     text-align: center;
     line-height: 195px;
 }
+.load img{
+	animation: rotate 3s linear infinite;  
+}
+#longinTip a{
+	position: absolute;
+    bottom: 12%;
+    width: 80%;
+    margin: auto;
+}
+#longinTip img{
+	padding: 70px 10px;
+}
+@keyframes rotate{from{transform: rotate(0deg)}
+to{transform: rotate(360deg)}
+}

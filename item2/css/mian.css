@@ -537,8 +537,8 @@ header a img{
 }
 .personalCenter form .pwdCont{
 	border-bottom: 1px solid #eee;
-	padding-bottom: 10px;
-	margin-bottom: 15px;
+	padding-bottom: 5px;
+    margin-bottom: 10px;
 }
 .feedback ul li{
 	padding: 0 10px;
@@ -575,8 +575,10 @@ header a img{
 }
 .personalCenter form .pwdCont p,
 .personalCenter form .pwdCont input{
-	font-size: 16px;
+	font-size: 14px;
 	color: #333;
+	height: 30px;
+	line-height: 30px;
 }
 .wx-gzh .wxImg{
     margin: 10px 20px;
@@ -810,4 +812,13 @@ header a img{
     background: #fff;
     margin: 10px;
     border-radius: 6px;
+}
+.load{
+	width: 195px;
+    height: 195px;
+    background: rgba(255,255,255,0.8);
+    vertical-align: middle;
+    position: absolute;
+    text-align: center;
+    line-height: 195px;
 }

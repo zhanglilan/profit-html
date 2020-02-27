@@ -15,7 +15,11 @@
 			<a href="#" class="flex-1 text-right"></a>
 		</header>
 		<section class="content">
-			<div class="onHook">
+			<!--登录提示信息-->
+			<div class="df jc ac" style="display: none;">
+				<img width="320" src="img/loginTip.png">
+			</div>
+			<div class="onHook" style="display: block;">
 				<div class="p-l-r-15">
 					<div class="step df ac clearfix">
 						<div class="text">
@@ -43,6 +47,9 @@
 					</p>
 					<div class="df jc m-t-25 m-b-35">
 						<img width="195" height="195" src="http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg">
+						<div class="load" style="display: block;">
+							<img width="93" src="img/Load.png"/>
+						</div>
 					</div>
 					<a href="#" class="gradualBtn blockBtn df ac jc">已拍照，打开微信扫码</a>
 				</div>
@@ -82,6 +89,32 @@
 			</ul>
 		</div>
 	</section>
+	<!--登录失败弹窗-->
+	<section class="popup" style="display: none;">
+		<div class="popupContent df fc jc ac">
+			<div class="popupContentImg">
+				<p class="font20 c-black p-b-15">登录失败</p>
+				<img width="180" class=" p-t-b-15"  src="img/fail.png"/>
+				<div class="text-left">
+					<p class="p-t-b-15 font12">
+						失败原因：<br>
+					1、可能没有点击确认登录按钮；<br>
+					2、点击频率过快；<br>
+					<span class="c-red">3、微信被限制，请24小时后再试；</span><br>
+					</p>
+					<a href="#" class="blueBtn blockBtn flex-1 df ac jc m-l-10">确 认</a>
+				</div>
+			</div>
+			<a id="close"><img width="36" class="closeImg" src="img/colse.png"/></a>
+		</div>
+	</section>
 	<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$(".closeImg").on("click",function(){
+				$(".popup").hide();
+			})
+		});
+	</script>	
 	</body>
 </html>

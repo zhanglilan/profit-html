@@ -164,6 +164,9 @@ button{
 .border-right{
 	border-right: 1px solid #eee;
 }
+.text-left{
+	text-align: left;
+}
 .text-center{
 	text-align: center;
 }

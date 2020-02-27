@@ -448,4 +448,8 @@ button{
 	.reBg .contImg img {
 		width: 300px;
 	}
+	.reBg form {
+		margin-top: 150px!important;
+	}
 }
+

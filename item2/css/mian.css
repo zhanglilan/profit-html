@@ -356,7 +356,7 @@ header a img{
 }
 .contentTabList{
 	padding-top: 40px;
-	padding-bottom: 70px;
+	padding-bottom: 20px;
 }
 .advert ul li{
 	box-shadow: 0px 2px 4px 0px rgba(23, 118, 213, 0.38);
@@ -541,22 +541,23 @@ header a img{
     margin-bottom: 10px;
 }
 .feedback ul li{
-	padding: 0 10px;
+	padding: 0 10px 0 0;
 	width: calc(100%/3);
 	float: left;
 	text-align: center;
-	margin-bottom: 10px;
+	/* margin-bottom: 10px; */
 }
 .feedback ul li a{
-	background: #E1E1E1;
-	color: #1173d4;
-	border-radius:6px;
-	display: block;
-    padding: 6px 0;
+	background: #fff;
+    color: #999;
+    border-radius: 6px;
+    display: block;
+    padding: 2px 0;
+    border: 1px solid #999;
 }
 .feedback ul li.active a{
-	background: #1173d4;
-	color: #fff;
+    border: 1px solid #1173d4;
+    color: #1173d4;
 }
 .feedback textarea,
 .feedback input{
@@ -568,10 +569,70 @@ header a img{
 }
 .feedback textarea{
 	padding-top: 10px;
+	background: #fff;
+	border:1px solid #eee;
+	color: #999;
+	font-size: 12px;
+	margin-bottom: 20px;
+	margin-top: 5px;
 }
 .feedback input{
 	height: 40px;
 	line-height: 40px;
+	margin-bottom: 20px;
+}
+.feedbackFoot{
+	position: fixed;
+    bottom: 0;
+    height: 50px;
+    background: #fff;
+    width: 100%;
+}
+.feedbackFoot>a{
+	font-size: 14px;
+}
+.feedbackFoot>a.active{
+	color: #1173d4;
+}
+.feedbackFoot>a>p>img{
+	margin-right: 5px;
+}
+.feedbackFoot>a>p>img:first-child,
+.feedbackFoot>a.active>p>img:last-child{
+	display: block;
+}
+.feedbackFoot>a>p>img:last-child,
+.feedbackFoot>a.active>p>img:first-child{
+	display: none;
+}
+.reply{
+	padding: 20px 0;
+}
+.reply .titleTime{
+	background: rgba(209,209,209,1);
+    border-radius: 4px;
+    display: inline-block;
+    padding: 0 10px;
+	color: #fff;
+	font-size: 12px;
+}
+.reply .replyContent{
+	margin: 15px;
+    background: #fff;
+    border-radius: 6px;
+    padding: 10px 20px;
+}
+.reply .replyContent p:first-child{
+	font-size: 14px;
+	color: #333;
+	border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+}
+.reply .replyContent p:last-child{
+	font-size: 12px;
+    color: #999;
+    line-height: 20px;
 }
 .personalCenter form .pwdCont p,
 .personalCenter form .pwdCont input{

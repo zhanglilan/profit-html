@@ -17,35 +17,39 @@
 		</header>
 		<section class="content">
 			<div class="feedback clearfix">
-				<div class="bg-white p-20">
-					<form class="">
-					<div class="font14">请选择您的问题类型</div>
-					<ul class="clearfix p-t-b-10">
-						<li class="active">
-							<a href="#">问题反馈</a>
-						</li>
-						<li>
-							<a href="#">内容建议</a>
-						</li>
-						<li>
-							<a href="#">合作</a>
-						</li>
-					</ul>
-					<textarea class="width100" placeholder="请描述您的问题或宝贵意见（空格也是一个字符）…" rows="7"></textarea>
-					<button id="feedbackBtn" type="button" class="width100 gradualBtn blockBtn df ac jc">提交</button>
-				</form>
+				<div class="reply p-l-r-15" style="display: block;">
+					<div class="df jc">
+						<p class="titleTime">13:25</p>
+					</div>
+					<div class="replyContent">
+						<p>关于某某某某问题的回复</p>
+						<p>关于某某某某问题的回复关于某某某某问题的回复关于某某某某问题的回复关于某某某某问题的回复关于某某某某问题的回复关于某某某某问题的回复关于某某某某问题的回复关于某某某某问题的回复关于某某某某问题的回复。</p>
+					</div>
+					<div class="df jc">
+						<p class="titleTime">2019年12月31日  09:00</p>
+					</div>
+					<div class="replyContent">
+						<p>关于某某某某问题的回复</p>
+						<p>关于某某某某问题的回复关于某某某某问题的回复关于某某某某问题的回复关于某某某某问题的回复关于某某某某问题的回复关于某某某某问题的回复关于某某某某问题的回复关于某某某某问题的回复关于某某某某问题的回复。</p>
+					</div>
+				</div>
+				<!--无数据详情-->
+				<div class="df jc text-center m-t-35" style="display: none;">
+					<img class="m-b-25" width="130" src="img/none.png"/>
+					<p>您暂时没有回复信息哦！</p>
+					<a href="问题反馈.html" class="c-red underline">点击此处去反馈</a>
 				</div>
 			</div>
 		</section>
 		<div class="feedbackFoot df jsb">
-			<a href="问题反馈.html" class="active df ac jc flex-1">
+			<a href="问题反馈.html" class="df ac jc flex-1">
 				<p>
 					<img width="15" src="img/personal/leavMsg.png">
 					<img width="15" src="img/personal/leavMsg-active.png">
 				</p>
 				<p>我的留言</p>
 			</a>
-			<a href="回复我的.html" class="df ac jc flex-1">
+			<a href="回复我的.html" class="active df ac jc flex-1">
 				<p>
 					<img width="15" src="img/personal/reply.png">
 					<img width="15" src="img/personal/reply-active.png">
@@ -87,28 +91,13 @@
 			</ul>
 		</div> -->
 	</section>
-	<!--弹窗-->
-	<section class="popup">
-		<div class="popupContent df fc jc ac">
-			<div class="popupContentImg">
-				<p class="c-black font16 font-bold p-b-15">提交成功</p>
-				<p>感谢您提交的建议/问题，我们会认真阅读您的建议并尽快给您回复！</p>
-				<div class="df p-t-b-15">
-					<a href="问题反馈.html" class="grayBtn blockBtn radiusBtnSmall flex-1 df ac jc">继续反馈</a>
-					<a href="index.html" class="blueBtn blockBtn radiusBtnSmall flex-1 df ac jc m-l-10">返回首页</a>
-				</div>
-			</div>
-		</div>
-	</section>
 	<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+	<script type="text/javascript" src="js/layer.js"></script>
 	<script>
 		$(function(){
 			$('.feedback ul li').on('click',function() {
 	            $(this).toggleClass('active');
-			});
-			$("#feedbackBtn").on("click",function(){
-				$('.popup').show();
-			})
+	        })
 		})
 	</script>
 	</body>

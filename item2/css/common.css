@@ -240,6 +240,9 @@ button{
 .p-t-b-15{
 	padding: 15px 0;
 }
+.p-t-b-10{
+	padding: 10px 0;
+}
 .p-r-0{
 	padding-right: 0;
 }
@@ -434,7 +437,7 @@ button{
 }
 
 @media screen and (max-width: 320px){
-	.blueBtn{
+	.team .blueBtn{
 		padding: 1px 5px;
 	}
 	.topCont{

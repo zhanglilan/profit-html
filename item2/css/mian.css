@@ -909,3 +909,19 @@ to{transform: rotate(360deg)}
 .startupPage img:first-child{
 	margin-bottom: 90px;
 }
+.record ul{
+	padding-top: 20px;
+}
+.record ul li{
+	border-bottom: 1px solid #eee;
+	padding: 0 15px 10px 15px;
+	margin-bottom: 10px;
+}
+.record ul li p span:first-child{
+	font-size: 15px;
+	color: #333;
+	font-weight: bold;
+}
+.record ul li p:last-child{
+	text-align: right;
+}

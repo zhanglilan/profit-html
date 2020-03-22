@@ -244,6 +244,23 @@
 	</section>
 	<!-- index弹窗背景 -->
 	<div class="indexPopup hide"></div>
+	<!-- 新手红包 -->
+	<section class="popup"  style="display: block;">
+		<div class="popupContent df fc jc ac">
+			<div class="relative red-envelopes-1">
+				<img width="261" class="p-t-b-15"  src="img/red-envelopes-1.png"/>
+				<a id="redEnvelopesOpen" class="red-envelopes-open">开</a>
+			</div>
+			<div class="relative red-envelopes-2 hide">
+				<div class="red-envelopes-bg">
+					<p>恭喜领到红包</p>
+					<p class="c-red font30"><span class="font12">￥</span>5.20</p>
+					<p>红包奖励将发放至您的余额，请注意查收！</p>
+				</div>
+			</div>
+			<a id="close"><img width="36" class="" src="img/colse.png"/></a>
+		</div>
+	</section>
 	<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
 	<script type="text/javascript" src="js/swiper.min.js"></script>
 	<!-- Initialize Swiper -->
@@ -264,10 +281,17 @@
 			$('.tipPopup').on('click',function(){
 				$('.indexPopup').show();
 				$(this).find('.indexInfo').show();
-			})
+			});
 			$('.indexPopup').on('click',function(){
 				$(this).hide();
 				$('.indexInfo').hide();
+			});
+			$('#redEnvelopesOpen').on('click',function(){
+				$('.red-envelopes-1').hide();
+				$('.red-envelopes-2').show();
+			})
+			$('#close').on('click',function(){
+				$('.popup').hide();
 			})
 		})
 	</script>

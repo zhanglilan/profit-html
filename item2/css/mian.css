@@ -904,10 +904,11 @@ to{transform: rotate(360deg)}
 	width: 100%;
 	height: 100%;
 	position: fixed;
-	background: #F7FBFF;
+	background: url(../img/startupPage.png) #fff no-repeat;
+	background-size: 100% 100%;
 }
 .startupPage img:first-child{
-	margin-bottom: 90px;
+	margin-top:76px;
 }
 .record ul{
 	padding-top: 20px;
@@ -924,4 +925,92 @@ to{transform: rotate(360deg)}
 }
 .record ul li p:last-child{
 	text-align: right;
+}
+.red-envelopes-open{
+	position: absolute;
+    bottom: 22%;
+    left: 38%;
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    border-radius: 100%;
+    color: transparent;
+}
+.red-envelopes-bg{
+	background: url(../img/red-envelopes-2.png) no-repeat;
+	width: 283px;
+	height: 246px;
+	background-size: 100% 100%;
+}
+.red-envelopes-bg p{
+	text-align: center;
+}
+.red-envelopes-bg p:first-child{
+	color: #A96F41;
+    font-weight: bold;
+    padding-top: 40px;
+    padding-bottom: 25px;
+}
+.red-envelopes-bg p:nth-child(2){
+	font-weight: bold;
+	font-size: 50px;
+}
+.red-envelopes-bg p:last-child{
+	font-size: 12px;
+    color: #FFD899;
+    padding-top: 55px;
+    padding: 55px 60px 0;
+    line-height: 19px;
+}
+.guide1{
+	background: url(../img/guide/guide1-bg.png) no-repeat;
+	width: 100%;
+	height: 100%;
+	background-size: 100% 100%;
+	position: absolute;
+}
+.guide2{
+	background: url(../img/guide/guide2-bg.png) no-repeat;
+	width: 100%;
+	height: 100%;
+	background-size: 100% 100%;
+	position: absolute;
+}
+.guide2-1{
+	background: url(../img/guide/guide2-1-bg.png) no-repeat;
+	width: 100%;
+	height: 100%;
+	background-size: 100% 100%;
+	position: absolute;
+}
+.guide2-2{
+	background: url(../img/guide/guide2-2-bg.png) no-repeat;
+	width: 100%;
+	height: 100%;
+	background-size: 100% 100%;
+	position: absolute;
+}
+.guide3{
+	background: url(../img/guide/guide3-bg.png) no-repeat;
+	width: 100%;
+	height: 100%;
+	background-size: 100% 100%;
+	position: absolute;
+}
+.guide1 .bottom{
+	position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.linkA{
+	text-align: center;
+}
+.linkA a{
+	margin-right: 15px;
+}
+.linkA.m-r-0 a{
+	margin-right: 0px;
+}
+.linkA a img{
+	width: 120px;
 }

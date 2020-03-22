@@ -907,9 +907,9 @@ to{transform: rotate(360deg)}
 	background: url(../img/startupPage.png) #fff no-repeat;
 	background-size: 100% 100%;
 }
-.startupPage img:first-child{
+/* .startupPage img:first-child{
 	margin-top:76px;
-}
+} */
 .record ul{
 	padding-top: 20px;
 }

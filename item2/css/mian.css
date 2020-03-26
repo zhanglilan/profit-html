@@ -445,8 +445,16 @@ header a img{
 .manual ul li .text{
 	padding: 0 20px 0 10px;
 }
+.manual ul li img{
+	display: block;
+}
 .manual ul li .text p:first-child{
 	color: #333;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
 }
 .manual ul li .text p:last-child{
 	color: #999;
@@ -461,7 +469,11 @@ header a img{
 .manual ul li a .right{
 	font-size: 12px;
     padding: 0;
-    text-align: center;
+	text-align: center;
+	padding: 0 10px;
+}
+.manual ul li a:last-child{
+	margin-top: 5px;
 }
 /*个人中心*/
 .personalCenter .top{

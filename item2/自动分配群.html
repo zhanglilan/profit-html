@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/mian.css" />
+	    <title>app</title>
+	</head>
+	<body>
+	<section>
+		<header class="df ac jsb jc">
+			<a href="javascript:history.go(-1);" class="df flex-1"><img src="../item2/img/arrow.png"/></a>
+			<p class="flex-1 text-center">自动分配群</p>
+			<a href="#" class="flex-1 text-right"></a>
+		</header>
+		<section class="content">
+			<div class=""> 
+				<div class="assign df ac jsb p-l-r-15">
+					<p>自动分配群</p>
+					<div class="assignSwitch">
+						<p  class="active"><img width="45" height="25" src="img/open.png"></p>
+						<p><img width="45" height="25" src="img/close.png"></p>
+					</div>
+				</div>
+				<p class="rowHeight22 p-l-r-15">
+					<span class="c-red">注意：</span>
+					开启该功能后，只要微信持续在线，系统每日会自动分配一到两个高质量群给您，并自动开启广告发送。开启后您也可以随时关闭该功能。  
+				</p>
+			</div>
+		</section>
+		<!--登录成功弹窗-->
+		<section id="loginPop" class="popup" style="display: none;">
+			<div class="popupContent df fc jc ac">
+				<div class="popupContentImg">
+					<p class="font20 c-black p-b-15">开启成功</p>
+					<img width="133" class=" p-t-b-15"  src="img/success-1.png"/>
+					<div class="text-left">
+						<p class="p-t-b-15 font12 textIndex">
+							开启成功后，只要您的微信持续在线
+							系统每日会给您分配一到两个高质量群
+							并自动开启发送广告。开启后您可以
+							随时关闭该功能
+						</p>
+						<a id="assignBtn" class="blueBtn blockBtn flex-1 df ac jc m-l-10">确定</a>
+					</div>
+				</div>
+				<!-- <a id="close"><img width="36" class="closeImg" src="img/colse.png"/></!--> -->
+			</div>
+		</section>
+	</section>
+	<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+	<script>
+		$(function(){
+			$(".assignSwitch>p").on("click",function(){
+				$(this).addClass('active').siblings().removeClass('active');
+				$('#loginPop').show();
+			});
+			$("#assignBtn").on("click",function(){
+				$('#loginPop').hide();
+			})
+		});
+	</script>
+	</body>
+</html>

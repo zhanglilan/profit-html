@@ -212,7 +212,7 @@
 			 $('.titleTab').on('click', 'li', function() {
 	            var i = $(this).index();
 	            $(this).addClass('active').siblings().removeClass('active');
-	            $(".contentTab>.contentTabList").eq(i).show().siblings().hide();
+	            $(".contentTab>div").eq(i).show().siblings().hide();
 	        })
 		});
 	</script>	

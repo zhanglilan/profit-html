@@ -49,7 +49,8 @@
 								</a>
 							</li>
 						</ul>
-						<a href="#" class="gradualBtn blockBtn df ac jc">免费分配群</a>
+						<a href="#" class="gradualBtn blockBtn df ac jc m-b-10">免费分配群</a>
+						<!-- <a id="assign" class="gradualBtn blockBtn lineBtn df ac jc">开启自动分配群</!-->
 					</div>
 					<!--常用功能-->
 					<div class="extend clearfix">
@@ -77,6 +78,18 @@
 								<a href="发送频率设置.html">
 									<img width="40" src="img/automatic/automatic-icon6.png"/>
 									<p>发送频率设置</p>
+								</a>
+							</li>
+							<li>
+								<a href="自动分配群.html">
+									<img width="40" src="img/automatic/automatic-icon8.png"/>
+									<p>自动分配群</p>
+								</a>
+							</li>
+							<li>
+								<a href="共享群说明.html">
+									<img width="40" src="img/automatic/automatic-icon9.png"/>
+									<p>共享群说明</p>
 								</a>
 							</li>
 							<li>
@@ -149,10 +162,37 @@
 				</li>
 			</ul>
 		</div>
+		<!--登录成功弹窗-->
+		<section id="loginPop" class="popup" style="display: none;">
+			<div class="popupContent df fc jc ac">
+				<div class="popupContentImg">
+					<p class="font20 c-black p-b-15">开启成功</p>
+					<img width="133" class=" p-t-b-15"  src="img/success-1.png"/>
+					<div class="text-left">
+						<p class="p-t-b-15 font12 textIndex">
+							开启成功后，只要您的微信持续在线
+							系统每日会给您分配一到两个高质量群
+							并自动开启发送广告。开启后您可以
+							随时关闭该功能
+						</p>
+						<a href="自动推广.html" class="blueBtn blockBtn flex-1 df ac jc m-l-10">确定</a>
+					</div>
+				</div>
+				<a id="close"><img width="36" class="closeImg" src="img/colse.png"/></a>
+			</div>
+		</section>
 	</section>
 	<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
 	<!-- Initialize Swiper -->
 	<script>
+		$(function(){
+			$("#assign").on("click",function(){
+				$('#loginPop').show();
+			});
+			$(".closeImg").on("click",function(){
+				$(".popup").hide();
+			});
+		});
 	</script>
 	</body>
 </html>

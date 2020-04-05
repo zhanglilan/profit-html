@@ -13,7 +13,7 @@ header a{
 	color: #fff;
 }
 header p{
-	font-size: 16px;
+	font-size: 14px;
     font-weight: 500;
 }
 header a img{
@@ -82,6 +82,9 @@ header a img{
 }
 .rowHeight{
 	line-height: 16px;
+}
+.rowHeight22{
+	line-height: 22px;
 }
 .team .bgShow{
 	padding: 20px 10px;
@@ -1046,4 +1049,140 @@ to{transform: rotate(360deg)}
 }
 .linkA a img{
 	width: 120px;
+}
+/*排行榜*/
+.rankingList{}
+.rankingList .rankTitle{
+	display: flex;
+    justify-content: center;
+	font-size: 15px;
+	padding: 15px 0;
+}
+.rankingList .rankTitle p.active{
+	color: #1173d4;
+}
+.rankingList .rankTitle>span{
+	padding: 0 10px;
+	color: #1173d4;
+}
+.rankingList ul{
+	background: #fff;
+    border-radius: 5px;
+    padding: 10px;
+}
+.rankingList ul li{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.rankingList ul li:last-child{
+	border-bottom: none;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+.rankingList ul li>p{
+	text-align: center;
+	width: 10%;
+}
+.rankingList ul li>p .rankUser{
+	width: 28px;
+    height: 28px;
+    background: #999;
+    border-radius: 100%;
+    border: none;
+}
+.rankingList ul li>p:first-child{
+	width: 9%;
+}
+.rankingList ul li>p:nth-child(2){
+	width: 10%;
+}
+.rankingList ul li>p:nth-child(3){
+	width: 10%;
+}
+.rankingList ul li>p:nth-child(4){
+	width: 21%;
+}
+.rankingList ul li>p:nth-child(5){
+	width: 20%;
+}
+.rankingList ul li>p:nth-child(6){
+	width: 20%;
+}
+.subRanking{
+	display: flex;
+    justify-content: space-between;
+	text-align: center;
+	padding-bottom: 10px;
+}
+.subRanking .titleCont{
+	flex: 1;
+}
+.subRanking .titleCont p{
+	color: #333;
+}
+.subRanking .titleCont p.c-red{
+	font-weight: 500;
+}
+.subRanking .titleCont>img{
+	margin-top: -25px;
+    margin-bottom: 15px;
+}
+.subRanking .titleCont:nth-child(2){
+	box-shadow: 0px -3px 6px -2px #0041a269;
+    margin-top: -30px;
+    background: #fff;
+}.subRanking .titleCont:nth-child(2)>img{
+	margin-top: -15px;
+    margin-bottom: 15px;
+}
+.subRanking .titleCont .rankUser{
+    width: 44px;
+    height: 44px;
+    background: #999;
+    border-radius: 100%;
+	border: none;
+	margin-bottom: 10px;
+}
+.assign{
+	height: 50px;
+	background: #fff;
+	margin-bottom: 20px;
+}
+.assign>p{
+
+}
+.assignSwitch p{
+	display: block;
+}
+.assignSwitch .active{
+	display: none;
+}
+.gameNotice{
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(0,0,0,0.7);
+	height: 64px;
+    padding: 10px;
+}
+.gameDownload{
+	font-size: 14px;
+    font-weight: 500;
+    color: rgba(255,255,255,1);
+    background: #E75F08;
+    padding: 4px 17px;
+	border-radius: 5px;
+	margin-left: 10px;
+}
+.gameNotice>div>p>img{
+	border-radius: 5px;
+	margin-right: 10px;
+}
+.gameNotice>div>div>p{
+	color: #fff;
 }

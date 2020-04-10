@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/mian.css" />
+	    <title>app</title>
+	</head>
+	<body>
+	<section>
+		<header class="df ac jsb jc">
+			<a href="javascript:history.go(-1);" class="df flex-1 opacity-0"><img src="../item2/img/arrow.png"/></a>
+			<p class="flex-1 text-center">朋友圈推广</p>
+			<a href="任务详情.html" class="flex-1 text-right">查看任务内容</a>
+		</header>
+		<section class="content">
+			<div class="momentsTitle">
+				<div class="p-l-r-10">
+					<a href="任务详情.html">
+						<div class="bgShow">
+							<div class="df fc jc ac">
+								<p class="font12">当前任务状态：</p> 
+								<p class="c-blue font20">检测好友中</p>
+								<p class="font12">(点击可查看任务内容）</p>
+							</div>
+						</div>
+					</a>
+					<div class="bgShow text-center p-t-b-20">
+						<div class="df">
+							<div class="flex-1 border-right-blue">
+								<p class="font20 c-blue font-bold">6.00</p>
+								<p class="font12">本次任务金额总额</p>
+							</div>
+							<div class="flex-1">
+								<p class="font20 c-blue font-bold">3.00</p>
+								<p class="font12">当前已获得金额</p>
+							</div>
+						</div>
+					</div>
+					<div class="df momentsBanner">
+						<a href="朋友圈收益说明.html"><img class="m-r-5" src="img/moments/moments-banner1.png"/></a>
+						<a href="常见问题.html"><img class="m-l-5" src="img/moments/moments-banner2.png"/></a>
+					</div>
+					<div class="m-t-b-10">
+						<a id="startTask"class="grayBtn gradualBtn blockBtn df ac jc m-b-10">开始任务</a>
+						<a class="gradualBtn lineBtn blockBtn df ac jc">退出登录</a>
+					</div>
+					<div class="rowHeight">
+						<p class="font12 c-red">注意：</p>
+						<p class="font12 c-red">1、非实名用户或好友少于200人，无法做朋友圈任务; </p>
+						<p class="font12 c-red">2、每日至少可进行一次任务，任务时间为在上7点至晚上12点。</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--barIcon-->
+		<div class="barIcon">
+			<ul class="clearfix">
+				<li class="active">
+					<a href="index.html">
+						<img width="20" src="img/indexImg/bar-icon1.png">
+						<img width="20" src="img/indexImg/bar-icon1-hover.png">
+						<p>首页</p>
+					</a>
+				</li>
+				<li class="">
+					<a href="自动推广.html">
+						<img width="20" src="img/indexImg/bar-icon2.png">
+						<img width="20" src="img/indexImg/bar-icon2-hover.png">
+						<p>自动推广</p>
+					</a>
+				</li>
+				<li class="moments">
+					<a href="朋友圈推广.html">
+						<img width="40" src="img/moments/moments-icon.png">
+						<p>朋友圈推广</p>
+					</a>
+				</li>
+				<li class="">
+					<a href="手动推广.html">
+						<img width="20" src="img/indexImg/bar-icon3.png">
+						<img width="20" src="img/indexImg/bar-icon3-hover.png">
+						<p>手动推广</p>
+					</a>
+				</li>
+				<li class="">
+					<a href="个人中心.html">
+						<img width="20" src="img/indexImg/bar-icon4.png">
+						<img width="20" src="img/indexImg/bar-icon4-hover.png">
+						<p>个人中心</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<!--未登录提示-->
+	 <section class="popup">
+		<div class="popupContent df fc jc ac">
+			<div class="popupContentImg">
+				<p class="c-black font16 font-bold p-b-15">提示</p>
+				<p>您登陆微信后，无需其它操作，任务 会自动进行</p>
+				<div class="df p-t-b-15">
+					<a href="朋友圈推广.html" class="grayBtn blockBtn radiusBtnSmall flex-1 df ac jc">退出</a>
+					<a id="taskLogin"  class="blueBtn blockBtn radiusBtnSmall flex-1 df ac jc m-l-10">去登陆</a>
+				</div>
+			</div>
+		</div>
+	</section> 
+	<!--登陆成功提示-->
+	<!-- <section class="popup">
+		<div class="popupContent df fc jc ac">
+			<div class="popupContentImg">
+				<p class="font20 m-b-10">登陆成功</p>
+				<p class="c-red">
+					恭喜您获得1元现金，已发放至您的微信钱包
+				</p>
+				<img width="180" class="m-t-b-10"  src="img/success-2.png"/>
+				<p class="m-b-25">
+					请等待1-2分钟，系统检测好友数量后，您可再获得3元奖励！
+				</p>
+				<a href="朋友圈推广.html" class="blueBtn blockBtn flex-1 df ac jc m-l-10">确 定</a>
+			</div>
+			<a id="close"><img width="36" class="closeImg" src="img/colse.png"/></a>
+		</div>
+	</section> -->
+	<!--首次发送朋友圈提示-->
+	<!-- <section class="popup">
+		<div class="popupContent df fc jc ac">
+			<div class="popupContentImg">
+				<p class="font20 m-b-10">发送朋友圈成功</p>
+				<p class="c-red">
+					3元奖励已发放至您的账户余额
+				</p>
+				<img width="180" class="m-t-b-10"  src="img/success-2.png"/>
+				<p class="m-b-25">
+					您已成功发送朋友圈，请保持微信在线1小
+					时，1小时后您可以选择退出微信，
+					<span class="c-red">微信无需在线，不会影响您的收益！</span>
+				</p>
+				<a href="朋友圈推广.html" class="blueBtn blockBtn flex-1 df ac jc m-l-10">确 定</a>
+			</div>
+			<a id="close"><img width="36" class="closeImg" src="img/colse.png"/></a>
+		</div>
+	</section> -->
+	<!--检测朋友圈状态失败提示-->
+	<!-- <section class="popup">
+		<div class="popupContent df fc jc ac">
+			<div class="popupContentImg">
+				<p class="font20 m-b-10">检测朋友圈状态失败</p>
+				<img width="180" class="m-t-b-10"  src="img/fail1.png"/>
+				<p class="m-b-25">
+					系统无法检测您上次发送的朋友圈状态，您不能获得奖励。
+				</p>
+				<a href="朋友圈推广.html" class="blueBtn blockBtn flex-1 df ac jc m-l-10">确 定</a>
+			</div>
+			<a id="close"><img width="36" class="closeImg" src="img/colse.png"/></a>
+		</div>
+	</section> -->
+	<!--检测朋友圈状态提示-->
+	<!--<section class="popup">
+		<div class="popupContent df fc jc ac">
+			<div class="startTaskLoad" style="display: block;">
+				<img width="93" src="img/Load.png"/>
+			</div>
+			<p class="c-white text-center">系统正在检测好友数量和上次发送朋友圈的状态，检测完毕毕后将发送朋友圈，请耐心等待几分钟</p>
+		</div>
+	</section>-->
+	<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+	<script>
+		$(function(){
+			$("#startTask").on("click",function(){
+				$(".popup").show();
+			});
+			$(".closeImg").on("click",function(){
+				$(".popup,.popup-2").hide();
+			});
+		})
+	</script>
+	</body>
+</html>

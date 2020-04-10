@@ -240,6 +240,9 @@ button{
 .p-t-b-10{
 	padding: 10px 0;
 }
+.p-t-b-20{
+	padding: 20px 0!important;
+}
 .p-t-b-15{
 	padding: 15px 0;
 }
@@ -254,6 +257,9 @@ button{
 }
 .p-l-r-15{
 	padding: 0 15px;
+}
+.p-r-20{
+	padding-right: 20px;
 }
 .p-r-30{
 	padding-right: 30px;
@@ -276,6 +282,9 @@ button{
 .m-l-r-10{
 	margin: 0 10px;
 }
+.m-l-r-20{
+	margin: 0 20px;
+}
 .m-b-5{
 	margin-bottom: 5px;
 }
@@ -284,6 +293,12 @@ button{
 }
 .m-b-50 {
 	margin-bottom: 50px;
+}
+.m-r-5{
+	margin-right: 5px;
+}
+.m-l-5{
+	margin-left: 5px;
 }
 .m-r-10{
 	margin-right: 10px;
@@ -372,6 +387,9 @@ button{
 	background: #1173d4;
 	border: 1px solid #1173d4;
 	
+}
+.darkGrey{
+	background: #999;
 }
 .gradualBtn{
 	background:linear-gradient(90deg,rgba(48,128,212,1),rgba(108,67,208,1));

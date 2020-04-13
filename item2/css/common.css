@@ -465,7 +465,6 @@ button{
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
 }
-
 @media screen and (max-width: 320px){
 	.team .blueBtn{
 		padding: 1px 5px;
@@ -489,6 +488,23 @@ button{
 	}
 	#longinTip img{
 		padding: 20px 10px!important;
+	}
+	.st-qrCode img{
+		width: 100px!important;
+		height: 100px!important;
+		margin-top: 70px!important;
+	}
+	.st-share-btn img{
+		width: 200px!important;
+		height: 50px!important;
+	}
+}
+@media screen and (min-width: 414px){
+	.st-qrCode img {
+		margin-top: 90px!important;
+	}
+	.st-share-btn img {
+		margin-top: 70px!important;
 	}
 }
 

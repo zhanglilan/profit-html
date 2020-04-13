@@ -63,7 +63,7 @@ header a img{
 .indexBg{
 	background: url(../img/indexImg/index-bg1.png) #fff;
     background-repeat: no-repeat;
-    height: 295px;
+    height: 360px;
     background-size: contain;
     width: 100%;
     background-position: right;
@@ -854,11 +854,11 @@ header a img{
     text-align: center;
 }
 .reBg>img{
-	padding-top: 52px;
+	padding-top: 12px;
 }
 .reBg form{
 	margin: 0 15px;
-	margin-top: 250px;
+	margin-top: 170px;
 }
 .loginBtn.reBtn>button {
 	background: #0067EF;
@@ -1332,10 +1332,16 @@ to{transform: rotate(360deg)}
 	color: #999;
 }
 .momentsContentNew{}
-.momentsTitle{
+.momentsTitle .momentsTitleBg{
 	background: linear-gradient(90deg,rgba(48,128,212,1),rgba(108,67,208,1));
     width: 100%;
     height: 60px;
+}
+.momentsTitle>div.p-l-r-10{
+
+    position: relative;
+    top: -60px;
+
 }
 .momentsTitle .bgShow{
 	position: relative;
@@ -1370,4 +1376,35 @@ to{transform: rotate(360deg)}
 }
 .momentsTaskDetail>ul>li:nth-child(9)>div>img{
 	border-bottom-right-radius: 5px;
+}
+.stBanner{
+	position: relative;
+    top: 15px;
+}
+.st-bg{
+	background: url(../img/moments/st-bg.png) #cc032b no-repeat;
+	background-size:100% ;
+	width: 100%;
+	height: 100%;
+    position: fixed;
+}
+.envelopes{
+	background: url(../img/moments/envelopes.png) no-repeat;
+	background-size:100%;
+	width: 100%;
+	height: 372px;
+}
+.st-qrCode{
+	text-align: center;
+}
+.st-qrCode img{
+	border-radius: 10px;
+	margin-top: 75px;
+}
+.st-share-btn{
+	text-align: center;
+    display: block;
+}
+.st-share-btn img{
+	margin-top: 50px;
 }

@@ -1350,7 +1350,8 @@ to{transform: rotate(360deg)}
 	margin-bottom: 10px;
 }
 .momentsTaskDetail{
-	margin: 20px 0;
+	margin: 10px 0 10px 0;
+	overflow: hidden;
 }
 .momentsTaskDetail>ul>li{
 	width: calc(100%/3);
@@ -1407,4 +1408,20 @@ to{transform: rotate(360deg)}
 }
 .st-share-btn img{
 	margin-top: 50px;
+}
+.momentsTaskBtn .blueState,
+.momentsTaskBtn .grayState{
+	background: linear-gradient(90deg,rgba(48,128,212,1),rgba(108,67,208,1));
+    width: 100%;
+    height: 45px;
+    padding: 0 15px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    color: #fff;
+    line-height: 45px;
+}
+.momentsTaskBtn .grayState{
+	background: linear-gradient(90deg,rgba(153,153,153,1),rgba(153,153,153,1));
 }

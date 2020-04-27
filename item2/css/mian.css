@@ -63,7 +63,8 @@ header a img{
 .indexBg{
 	background: url(../img/indexImg/index-bg1.png) #fff;
     background-repeat: no-repeat;
-    height: 360px;
+	/* height: 360px; */
+	padding: 10px;
     background-size: contain;
     width: 100%;
     background-position: right;
@@ -516,7 +517,7 @@ header a img{
 	border-right: 1px solid #1173d4;
 }
 .border-right-blue{
-	border-right: 1px solid #c1dfff;
+	border-right: 1px solid #227bd6;
 }
 .m-t-75{
 	margin-top: 75px;
@@ -1424,4 +1425,51 @@ to{transform: rotate(360deg)}
 }
 .momentsTaskBtn .grayState{
 	background: linear-gradient(90deg,rgba(153,153,153,1),rgba(153,153,153,1));
+}
+
+.noviceBenefits .top{
+	height: 50px;
+    background: linear-gradient(90deg,rgba(48,128,212,1),rgba(108,67,208,1));
+}
+.noviceBenefits ul{
+	padding-top: 10px;
+}
+.noviceBenefits ul li{
+	padding: 10px;
+	margin-bottom: 10px;
+	position: relative;
+}
+.noviceBenefits ul li .flex-1{
+	padding-left: 10px;
+}
+.noviceBenefits ul li.line-red::before,
+.noviceBenefits ul li.line-blue::before,
+.noviceBenefits ul li.line-orange::before,
+.noviceBenefits ul li.line-green::before
+{
+	content: "";
+    width: 5px;
+    height: 60%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 200px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 200px;
+    position: absolute;
+    left: 0;
+
+}
+.noviceBenefits ul li.line-red::before{
+	background: #fe696a;
+}
+.noviceBenefits ul li.line-blue::before{
+	background: #202efe;
+}
+.noviceBenefits ul li.line-orange::before{
+	background: #fdb11d;
+}
+.noviceBenefits ul li.line-green::before{
+	background: #43841f;
+}
+.noviceBenefits ul li>a{
+	
 }

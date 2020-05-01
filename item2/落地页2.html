@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <link rel="stylesheet" href="css/common.css" />
+	    <link rel="stylesheet" href="css/mian.css">
+	    <title>app</title>
+	</head>
+	<body class="bg-white">
+	<section>
+		<div class="">
+			<div class="gameNotice df ac jsb">
+				<div class="df ac flex-1">
+					<p>
+						<img width="50" height="50" src="http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg">
+					</p>
+					<div class="df afs fc text-left">
+						<p>游戏昵称 </p>
+						<p class="line-clamp-1 font12">这里是游戏简介，这里是游这里是游戏简介，这里是游</p>
+					</div>
+				</div>
+				<a href="#" class="gameDownload">立即下载</a>
+			</div>
+			<header class="df ac jsb">
+				<p class="flex-1 text-center">躺赚平台</p>
+			</header>
+			<div class="content">
+				<div class="Landing">
+					<p>您的微信价值(元/日)</p>
+					<p>800.00</p>
+				</div>
+				<div class="Landing-list">
+					<div class="rowup">
+						<div class="item">刚赚了300块，躺赚赚钱就是快！！</div>
+						<div class="item">刚赚了400块，躺赚赚钱就是快！！</div>
+						<div class="item">刚赚了500块，躺赚赚钱就是快！！</div>
+						<div class="item">刚赚了600块，躺赚赚钱就是快！！</div>
+						<div class="item">刚赚了700块，躺赚赚钱就是快！！</div>
+						<div class="item">刚赚了800块，躺赚赚钱就是快！！</div>
+						<div class="item">刚赚了300块，躺赚赚钱就是快！！</div>
+						<div class="item">刚赚了400块，躺赚赚钱就是快！！</div>
+						<div class="item">刚赚了500块，躺赚赚钱就是快！！</div>
+						<div class="item">刚赚了600块，躺赚赚钱就是快！！</div>
+						<div class="item">刚赚了700块，躺赚赚钱就是快！！</div>
+						<div class="item">刚赚了800块，躺赚赚钱就是快！！</div>
+						<div class="item">刚赚了300块，躺赚赚钱就是快！！</div>
+						<div class="item">刚赚了400块，躺赚赚钱就是快！！</div>
+						<div class="item">刚赚了500块，躺赚赚钱就是快！！</div>
+						<div class="item">刚赚了600块，躺赚赚钱就是快！！</div>
+						<div class="item">刚赚了700块，躺赚赚钱就是快！！</div>
+						<div class="item">刚赚了800块，躺赚赚钱就是快！！</div>
+					</div>
+				</div>
+				<div class="Landing-icon df">
+					<a href="#" class="flex-1">
+						<img width="35" height="35" src="img/Landing-icon1.png">
+						<p>高额任务</p>
+					</a>
+					<a href="#" class="flex-1">
+						<img width="35" height="35" src="img/Landing-icon2.png">
+						<p>玩游戏赚钱</p>
+					</a>
+					<a href="#" class="flex-1">
+						<img width="35" height="35" src="img/Landing-icon1.png">
+						<p>快速任务</p>
+					</a>
+				</div>
+				<div class=" p-l-r-15">
+					<input class="LandingInput" placeholder="请输入您的微信号">
+					<a id="wx-income" href="#" class="gradualBtn blockBtn df ac radiusBtnSmall jc m-b-10">测试我的微信收入</a>
+				</div>
+				<div class="df jc">已有账号？<a class="c-blue" href="登录.html">立即登录</a></div>
+			</div>
+		</div>
+	</section>
+	<!--弹窗-->
+	<section class="popup">
+		<div class="popupContent df fc jc ac">
+			<div class="popupContentImg">
+				<div class="Landing-red-envelopes">
+					<p class="c-red">您的微信价值为(元/日)</p>
+					<p class="c-red font30 font-bold">500.00</p>
+					<p class="c-white">注册APP后即可领取现金</p>
+				</div>
+				<div class="df p-t-b-15">
+					<a href="#" class="orangeBtn-gradual blockBtn flex-1 df ac jc">立即领取</a>
+				</div>
+			</div>
+			<a id="close"><img width="36" class="closeImg" src="img/colse.png"/></a>
+		</div>
+	</section>
+	<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#wx-income").on("click",function(){
+				$(".popup").show();
+			})
+			$(".closeImg").on("click",function(){
+				$(".popup").hide();
+			})
+		});
+	</script>	
+	</body>
+</html>

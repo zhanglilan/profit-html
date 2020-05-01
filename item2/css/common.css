@@ -374,8 +374,12 @@ button{
 .greenBtn{
 	background:#43C845;
 }
-.orangeBtn{
-	background: #FD7D1A;
+.orangeBtn-gradual{
+	background: linear-gradient(90deg,rgba(252,119,66,1),rgba(253,83,41,1));
+	color: #fff;
+}
+.gradualBtn {
+    background: linear-gradient(90deg,rgba(48,128,212,1),rgba(108,67,208,1));
 }
 .purpleBtn{
 	background: #694EFF;

@@ -289,7 +289,7 @@ header a img{
 	background-repeat: no-repeat;
 	height: 180px;
 	width: 100%;
-    background-size: contain;
+    background-size: 100%;
 }
 .automaticList ul{
 	padding: 20px 0 0 0;
@@ -1194,7 +1194,8 @@ to{transform: rotate(360deg)}
 	top: 0;
 	background: rgba(0,0,0,0.7);
 	height: 64px;
-    padding: 10px;
+	padding: 10px;
+	z-index: 10;
 }
 .gameDownload{
 	font-size: 14px;
@@ -1472,4 +1473,156 @@ to{transform: rotate(360deg)}
 }
 .noviceBenefits ul li>a{
 	
+}
+.scaleDraw{
+	display: block;
+	text-align: center;
+}
+.scaleDraw>img{
+	width: 90%;
+	-webkit-animation-name: redEnvelopes; /*关键帧名称*/
+	/* -webkit-animation-timing-function: ease-in-out;  */
+	-webkit-animation-iteration-count: infinite;  /*动画播放的次数*/
+	-webkit-animation-duration: 2s; /*动画所花费的时间*/
+}
+@keyframes redEnvelopes {  /*定义关键帧、scaleDrew是需要绑定到选择器的关键帧名称*/
+	0%{
+		transform: scale(1);  /*开始为原始大小*/
+	}
+	25%{
+		transform: scale(1.1); /*放大1.1倍*/
+	}
+	50%{
+		transform: scale(1);
+	}
+	75%{
+		transform: scale(1.1);
+	}
+}
+
+.Landing{
+	background: url(../img/LandingBg.png) no-repeat;
+	width: 100%;
+	height: 242px;
+	background-size: 100% 100%;
+	text-align: center;
+    padding-top: 90px;
+    color: #fff;
+}
+.Landing p:first-child{
+	font-size: 16px;
+}
+.Landing p:last-child{
+	font-size: 50px;
+    padding-top: 25px;
+}
+@-webkit-keyframes rowup {
+	0% {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+	100% {
+		-webkit-transform: translate3d(0, -307px, 0);
+		transform: translate3d(0, -307px, 0);
+	}
+}
+@keyframes rowup {
+	0% {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+	100% {
+		-webkit-transform: translate3d(0, -307px, 0);
+		transform: translate3d(0, -307px, 0);
+	}
+}
+
+.Landing-list{
+	width: 100%;
+    position: relative;
+    height: 50px;
+    overflow: hidden;
+    padding: 20px;
+}
+.Landing-list .item{
+	color: red;
+	line-height: 30px;
+	
+}
+.Landing-list .item::before{
+	content: "";
+	width: 15px;
+	height: 15px;
+	border-radius: 100%;
+	background: #999999;
+	display: inline-block;
+	margin-right: 8px;
+	position: relative;
+    top: 3px;
+}
+.Landing-list .rowup{
+	-webkit-animation: 10s rowup linear infinite normal;
+	animation: 10s rowup linear infinite normal;
+	position: relative;
+}
+.Landing-icon{
+	border: 10px solid #f8f8f8;
+    border-left: 0;
+    border-right: 0;
+    text-align: center;
+    padding: 10px 0;
+}
+.LandingInput{
+	height: 40px;
+    border: 1px solid #3080d4;
+    width: 100%;
+	text-indent: 10px;
+	border-radius: 6px;
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+.Landing-red-envelopes {
+    background: url(../img/landing-popup.png) no-repeat;
+	width: 286px;
+    height: 250px;
+    background-size: 100% 100%;
+	margin-left: -12px;
+	padding-top: 40px;
+}
+.Landing-red-envelopes p:first-child{
+	padding-bottom: 15px;
+}
+.Landing-red-envelopes p:nth-child(2){
+	padding-bottom: 80px;
+}
+.sx-popup{
+	background: url(../img/xs-popup.png) no-repeat;
+	width: 346px;
+    height: 365px;
+	background-size: 100% 100%;
+	display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.sx-popup img{
+	position: relative;
+    bottom: 20px;
+	-webkit-animation-name: redEnvelopes; /*关键帧名称*/
+	/* -webkit-animation-timing-function: ease-in-out;  */
+	-webkit-animation-iteration-count: infinite;  /*动画播放的次数*/
+	-webkit-animation-duration: 2s; /*动画所花费的时间*/
+}
+@keyframes redEnvelopes {  /*定义关键帧、scaleDrew是需要绑定到选择器的关键帧名称*/
+	0%{
+		transform: scale(1);  /*开始为原始大小*/
+	}
+	25%{
+		transform: scale(1.1); /*放大1.1倍*/
+	}
+	50%{
+		transform: scale(1);
+	}
+	75%{
+		transform: scale(1.1);
+	}
 }

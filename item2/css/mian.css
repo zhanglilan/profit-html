@@ -9,6 +9,9 @@ header {
 	left: 0;
 	z-index: 9;
 }
+.headerOrange{
+	background:#fb6f3e;
+}
 header a{
 	color: #fff;
 }
@@ -1501,18 +1504,25 @@ to{transform: rotate(360deg)}
 }
 
 .Landing{
-	background: url(../img/LandingBg.png) no-repeat;
+	/* background: url(../img/LandingBg.png) no-repeat; */
+	background: linear-gradient(0deg,rgba(254,149,66,1),rgba(252,112,61,1));
 	width: 100%;
-	height: 242px;
-	background-size: 100% 100%;
 	text-align: center;
-    padding-top: 90px;
+    padding: 35px 0;
     color: #fff;
 }
-.Landing p:first-child{
+.LandingBg{
+	background: url(../img/LandingBg.png) no-repeat;
+    width: 338px;
+    height: 171px;
+    background-size: 100%;
+    margin: auto;
+}
+.LandingBg p:first-child{
+	padding-top: 30px;
 	font-size: 16px;
 }
-.Landing p:last-child{
+.LandingBg p:last-child{
 	font-size: 50px;
     padding-top: 25px;
 }
@@ -1572,14 +1582,21 @@ to{transform: rotate(360deg)}
     text-align: center;
     padding: 10px 0;
 }
+.border-top-10-gray{
+	border-top: 10px solid #f8f8f8;
+}
 .LandingInput{
 	height: 40px;
-    border: 1px solid #3080d4;
+    border: 1px solid #fb6f3e;
     width: 100%;
 	text-indent: 10px;
 	border-radius: 6px;
 	margin-top: 30px;
 	margin-bottom: 15px;
+}
+.LandingInput input{
+	width: 45%;
+	border: none;
 }
 .Landing-red-envelopes {
     background: url(../img/landing-popup.png) no-repeat;
@@ -1588,6 +1605,7 @@ to{transform: rotate(360deg)}
     background-size: 100% 100%;
 	margin-left: -12px;
 	padding-top: 40px;
+	/* margin: auto; */
 }
 .Landing-red-envelopes p:first-child{
 	padding-bottom: 15px;
@@ -1625,4 +1643,29 @@ to{transform: rotate(360deg)}
 	75%{
 		transform: scale(1.1);
 	}
+}
+.scaleList{
+	margin-bottom: 30px;
+}
+.scaleList>p{
+	margin-bottom: 10px;
+}
+.scale ul li div img{
+	margin-right: 5px;
+}
+.scale ul li p{
+	color: #000;
+}
+.scale  ul li div img:first-child,
+.scale  ul li.active div img:last-child{
+	display: block;
+}
+.scale  ul li div img:last-child,
+.scale  ul li.active div img:first-child{
+	display: none;
+}
+.scaleList{
+	border: 1px solid #ff3433;
+    border-radius: 6px;
+    padding: 10px;
 }

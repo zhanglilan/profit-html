@@ -502,6 +502,15 @@ button{
 		width: 200px!important;
 		height: 50px!important;
 	}
+	.LandingBg {
+		width: 100%!important;
+	}
+	.LandingInput input {
+		width: 43%!important;
+	}
+	.Landing-red-envelopes {
+		margin-left: -35px!important;
+	}
 }
 @media screen and (min-width: 414px){
 	.st-qrCode img {
@@ -509,6 +518,14 @@ button{
 	}
 	.st-share-btn img {
 		margin-top: 70px!important;
+	}
+	.Landing-red-envelopes {
+		margin-left: 0!important;
+	}
+}
+@media screen and (min-width:768px){
+	.Landing-red-envelopes {
+		margin: auto!important;
 	}
 }
 

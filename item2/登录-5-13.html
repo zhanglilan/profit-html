@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/mian.css" />
+	    <title>app</title>
+	</head>
+	<body>
+	<section>
+		<header class="df ac jsb jc">
+			<a href="javascript:history.go(-1);" class="df flex-1"><img src="../item2/img/arrow.png"/></a>
+			<p class="flex-1 text-center">登录</p>
+			<a href="#" class="flex-1 text-right"></a>
+		</header>
+		<section class="content">
+			<div class="noticeList">
+				<div class="p-l-r-10 m-t-b-10">
+					<a href="#"><img class="width100" src="img/loginBanner.png"></a>
+					<p class="c-red p-t-10">注意：</p>
+					<p>1、检测过程中不影响您微信的正常使用；</p>
+					<p>2、检测过程中微信不能退出或登录其他客户端。</p>
+					<a id="wx-check" class="gradualBtn blockBtn df ac jc m-t-b-10">点击检测微信</a>
+				</div>
+			</div>
+		</section>
+	</section>
+	<!--弹窗-->
+	<section class="popup">
+		<div class="popupContent df fc jc ac">
+			<div class="popupContentImg">
+				<p class="c-red font16 font-bold p-b-5 text-left">特别提示，长按无效！</p>
+				<p class="c-black text-left font-500">首次挂机步骤：</p>
+				<p class="c-black text-left">
+					1、请用其他手机（如身边亲友）拍照下方二维码；<br>
+					2、打开微信“扫一扫”扫描刚拍的照片并点击确认（
+					微信可能会提示异地登录等信息，不用担心，直接忽
+					略即可，本系统保证安全；<br><br>
+				</p>
+				<div>
+					<img width="195" height="195" src="http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg">
+				</div>
+			</div>
+			<a id="close"><img width="36" class="closeImg" src="img/colse.png"/></a>
+		</div>
+	</section>
+	<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#wx-check").on("click",function(){
+				$(".popup").show();
+			})
+			$(".closeImg").on("click",function(){
+				$(".popup").hide();
+			})
+		});
+	</script>	
+	</body>
+</html>

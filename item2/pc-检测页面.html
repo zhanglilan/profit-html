@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/mian.css" />
+	    <title>app</title>
+	</head>
+	<body>
+	<section>
+		<div class="pcContact">
+			<a href="#"><img src="img/pc/contact.png"></a>
+		</div>
+		<div class="bannerBg">
+			<div class="">
+				<img class="width100" src="img/pc/pc-banner.png">
+			</div>
+		</div>
+		<div class="grayBg text-center">
+			<div class="width1200 m-width100">
+				<br>
+				<p class="c-red font-bold font16 m-b-10">庆祝公司成立4周年今日特别活动</p>
+				<p class="c-black">
+					1、只需微信成功登录开始检测即可领取现金<span class="c-red font-bold">5元</span>；<br>
+					2、检测完成后A级微信立领<span class="c-red font-bold">188元</span>，B级微信立领<span class="c-red font-bold">88元</span>，C级微信立领<span class="c-red font-bold">68元</span>； <br>  
+					3、推荐一个用户成功登录并开始检测即可领取现金<span class="c-red font-bold">5元</span>(D级微信不参加活动)。<br>
+				</p>
+				<!-- <div class="df p-t-b-15 width300 m-width100">
+					<a href="#" class="orangeBtn-gradual blockBtn flex-1 df ac jc">联系客服领取现金</a>
+				</div> -->
+				<div class="df text-left p-t-b-50 width600 m-width100">
+					<div class="df jc flex-1">
+						<img class="m-r-10" width="40" height="40" src="img/pc/pc-icon1.png"/>
+						<div class="c-black">
+							<p>无需密码</p>
+							<p>No password required</p>
+						</div>
+					</div>
+					<div class="df jc flex-1">
+						<img class="m-r-10" width="40" height="40" src="img/pc/pc-icon2.png"/>
+						<div class="c-black">
+							<p>安全保障</p>
+							<p>Security</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="whiteBg">
+			<div class="width1200 m-width100">
+				<div class="width600 m-width100">
+					<div class="df arrowTip">
+						<img src="img/pc/pc-arrow.png">
+						<div class="text-center">
+							<p class="font12">点击下方按钮</p>
+							<p class="c-red font-bold font16 line-height-13">点击下方进入检测<br><span class="font12">(Click below to enter detection)</span></p>
+						</div>
+						<img src="img/pc/pc-arrow-right.png">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="orangeBg wxCheck  df ac">
+			<div class="width1200 relative m-width100">
+				<div class="df ac jfe width600 m-width100">
+					<img class="pc-service aaa" src="img/pc/pc-service.png">
+					<div class="rightContent">
+						<p>专业检测微信质量<br><span class="font12">Professional Detection Of Wechat Quality</span></p>
+						<div class="pc-btn fc">
+							<img class="pc-btn-text" src="img/pc/pc-btn-text.png">
+						</div>
+						<p class="c-white text-center">(扫描二维码后在微信中点击登录即可)</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="whiteBg">
+			<div class="width1200 m-width100">
+				<p class="c-red text-center p-t-b-20">注意：检测过程中微信不能退出登录或者登录其他客户端，也不会影响您微信的正常使用。</p>
+			</div>
+		</div>
+	</section>
+	<!--弹窗成功-->
+	<section class="popup" style="display: block;">
+		<div class="popupContent df fc jc ac">
+			<div class="popupContentImg">
+				<p class="c-red font-bold">登录成功</p>
+				<img class="m-t-b-10" width="45" height="45" src="img/pc/success-icon.png">
+				<p class="font12">
+					登录成功，马上开始检测，检测完成前请不要退出登录，检测完成后联系客服即可领取现金
+				</p>
+				<div class="df p-t-b-15">
+					<a href="#" class="orangeBtn-gradual blockBtn-5 flex-1 df ac jc">联系客服领取5元现金</a>
+				</div>
+			</div>
+			<!-- <a id="close"><img width="36" class="closeImg" src="img/colse.png"/></a> -->
+		</div>
+	</section>
+	<!--弹窗失败-->
+	<section class="popup" style="display: none;">
+		<div class="popupContent df fc jc ac">
+			<div class="popupContentImg">
+				<p class="c-red font-bold">登录失败</p>
+				<img class="m-t-b-10" width="45" height="45" src="img/pc/fail-icon.png">
+				<div class="df p-t-b-15">
+					<a href="#" class="blockBtn-5 lineBtnOrange flex-1 df ac jc m-r-5">联系客服</a>
+					<a href="#" class="orangeBtn-gradual blockBtn-5 flex-1 df ac jc">重新登录</a>
+				</div>
+			</div>
+			<!-- <a id="close"><img width="36" class="closeImg" src="img/colse.png"/></a> -->
+		</div>
+	</section>
+	<!--登录二维码弹窗-->
+	<section class="popup" style="display: none;">
+		<div class="popupContent df fc jc ac">
+			<div class="popupContentImg">
+				<p class="c-red font-bold">登录成功后即可联系客服 领取5元现金</p>
+				<div class="m-t-b-10">
+					<img width="195" height="195" src="http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg">
+				</div>
+				<p>
+					请打开微信扫一扫，扫描上方二维码，点击登录即可
+				</p>
+			</div>
+			<a id="close"><img width="36" class="closeImg" src="img/colse.png"/></a>
+		</div>
+	</section>
+	<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$(".closeImg").on("click",function(){
+				$(".popup").hide();
+			})
+		});
+	</script>	
+	</body>
+</html>

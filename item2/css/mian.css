@@ -1669,3 +1669,119 @@ to{transform: rotate(360deg)}
     border-radius: 6px;
     padding: 10px;
 }
+/*pc*/
+.bannerBg{
+	background: linear-gradient(0deg,rgba(254,149,66,1),rgba(252,112,61,1));
+    width: 100%;
+}
+.width1200{
+	width: 1200px;
+	margin: auto;
+}
+.width300{
+	width: 300px;
+	margin: auto;
+}
+.width600{
+	width: 500px;
+	margin: auto;
+}
+.grayBg{
+	background: #f8f8f8;
+}
+.whiteBg{
+	background: #fff;
+}
+.orangeBg{
+	background: #fb7a50;
+}
+.line-height-13{
+	line-height: 13px;
+}
+.arrowTip{
+	padding: 20px 0 20px 0;
+    justify-content: flex-end;
+}
+.arrowTip img{
+	width: 22px;
+	height: 35px;
+	position: relative;
+    top: 20px;
+    margin: 0 10px;
+}
+/* .arrowTip img:last-child{
+	transform: rotateY(180deg)
+} */
+.wxCheck{
+	height: 230px;
+}
+.wxCheck img.pc-service{
+	width: 160px;
+    position: absolute;
+    top: -106px;
+    left: 26%;
+}
+.wxCheck  .rightContent{
+
+}
+.wxCheck  .rightContent p:first-child{
+	font-size: 36px;
+    color: #fff;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.wxCheck  .rightContent .pc-btn{
+	background: url(../img/pc/pc-btn.png);
+    height: 55px;
+	width: 100%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.pc-btn-text{
+	width: 60%;
+    position: relative;
+    top: -3px;
+}
+.pc-btn p{
+	margin-top: 30px;
+}
+.p-t-b-50{
+	padding: 50px 0;
+}
+.pcContact{
+	position: fixed;
+	top: 50%;
+	right: 20%;
+	z-index: 1;
+}
+.pcContact a{
+	display: block;
+}
+.pcContact a img{
+	width: 60%;
+}
+.pc-btn-text,
+.arrowTip img{
+	-webkit-animation-name: checkBtn;
+    /* -webkit-animation-timing-function: ease-in-out; */
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 2s;
+}
+@keyframes checkBtn {  /*定义关键帧、scaleDrew是需要绑定到选择器的关键帧名称*/
+	0%{
+		transform: scale(1);  /*开始为原始大小*/
+	}
+	25%{
+		transform: scale(1.1); /*放大1.1倍*/
+	}
+	50%{
+		transform: scale(1);
+	}
+	75%{
+		transform: scale(1.1);
+	}
+}

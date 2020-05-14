@@ -402,6 +402,10 @@ button{
 	border-radius: 200px;
     height: 40px;
 }
+.blockBtn-5{
+	height: 40px;
+	border-radius: 5px;
+}
 .radiusBtn{
 	border-radius: 200px;	
 }
@@ -416,6 +420,11 @@ button{
 	background: #fff;
 	color: #1173d4;
 	border: 1px solid #1173d4;
+}
+.lineBtnOrange{
+	background: #fff;
+	color: #FB6C3D;
+	border: 1px solid #FB6C3D;
 }
 .swiper-container {
     margin: 2%;
@@ -511,6 +520,9 @@ button{
 	.Landing-red-envelopes {
 		margin-left: -35px!important;
 	}
+	.wxCheck .rightContent p:first-child {
+		font-size: 30px!important;
+	}
 }
 @media screen and (min-width: 414px){
 	.st-qrCode img {
@@ -526,6 +538,27 @@ button{
 @media screen and (min-width:768px){
 	.Landing-red-envelopes {
 		margin: auto!important;
+	}
+	.popup .popupContent{
+		width: 400px!important;
+	}
+}
+@media screen and (max-width:768px){
+	.Landing-red-envelopes {
+		margin: auto!important;
+	}
+	.m-width100{
+		width: 100%!important;
+		padding: 0 20px;
+	}
+	.pc-service{
+		display: none!important;
+	}
+	.arrowTip,.width600.jfe{
+		justify-content: center!important;
+	}
+	.pcContact {
+		right: -10%!important;
 	}
 }
 

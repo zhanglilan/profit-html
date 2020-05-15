@@ -1762,7 +1762,7 @@ to{transform: rotate(360deg)}
 	display: block;
 }
 .pcContact a img{
-	width: 60%;
+	width: 90%;
 }
 .pc-btn-text,
 .arrowTip img{
@@ -1783,5 +1783,31 @@ to{transform: rotate(360deg)}
 	}
 	75%{
 		transform: scale(1.1);
+	}
+}
+.activityTitle{
+	font-size: 32px;
+	margin: 25px 0;
+	-webkit-animation-name: colorText;
+    /* -webkit-animation-timing-function: ease-in-out; */
+    -webkit-animation-iteration-count: infinite;
+	-webkit-animation-duration: 3s;
+	letter-spacing: 5px;
+}
+@keyframes colorText {  /*定义关键帧、scaleDrew是需要绑定到选择器的关键帧名称*/
+	0%{
+		color: #ff0000;  
+	}
+	25%{
+		color: #000000; 
+	}
+	50%{
+		color: #ffb400; 
+	}
+	75%{
+		color: #0000cb; 
+	}
+	100%{
+		color: #ff0000;  
 	}
 }

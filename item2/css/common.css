@@ -218,6 +218,9 @@ button{
 .font26 {
 	font-size: 26px;
 }
+.font28 {
+	font-size: 28px;
+}
 .font30 {
 	font-size: 30px;
 }
@@ -559,6 +562,13 @@ button{
 	}
 	.pcContact {
 		right: -10%!important;
+	}
+	.activityTitle{
+		font-size: 24px!important;
+		line-height: 30px;
+	}
+	.pcContact a img {
+		width: 60%!important;
 	}
 }
 

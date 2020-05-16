@@ -526,6 +526,12 @@ button{
 	.wxCheck .rightContent p:first-child {
 		font-size: 30px!important;
 	}
+	.popup .popupContent.rePopup {
+		width: 90%!important;
+	}
+	.Landing-list.reLanding {
+		padding: 20px 10px!important;
+	}
 }
 @media screen and (min-width: 414px){
 	.st-qrCode img {
@@ -544,6 +550,9 @@ button{
 	}
 	.popup .popupContent{
 		width: 400px!important;
+	}
+	.popup .popupContent.rePopup {
+		width: 320px!important;
 	}
 }
 @media screen and (max-width:768px){

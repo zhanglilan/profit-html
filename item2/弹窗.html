@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/mian.css" />
+	    <title>app</title>
+	</head>
+	<body>
+	<!--红包弹窗-->
+	<section class="popup" style="display: block;">
+		<div class="popupContent rePopup">
+			<div class="text-center">
+				<a class="reArrow text-left" href="javascript:history.go(-1);">
+					<img width="7" height="15" src="img/pc/reArrow.png">
+				</a>
+				<div class="wxIcon df jc ac">
+					<img width="25" height="25" src="img/pc/wx-icon.png">
+					<p class="c-black">&nbsp;微信的红包</p>
+				</div>
+				<p class="font12">庆祝微信10周年 100亿红包等你来分</p>
+				<div class="reAmount">
+					<p class="">188.88<span class="font12"> 元</span></p>
+					<p class="font12">1年以上微信即可领取</p>
+				</div>
+				<div class="reBtn">
+					<img src="img/pc/pc-btn-text.png">
+				</div>
+				<a href="#" class="font12 c-black underline">联系客服</a>
+				<div class="Landing-list reLanding">
+					<div class="rowup df jc fc">
+						<div class="item">微信用户<span class="name">用户姓名用户姓名</span>成功领取了188.88元！</div>
+						<div class="item">微信用户<span class="name">用户姓名</span>成功领取了188.88元！</div>
+						<div class="item">微信用户<span class="name">XXXXX</span>成功领取了188.88元！</div>
+						<div class="item">微信用户<span class="name">用户姓名用户姓名</span>成功领取了188.88元！</div>
+						<div class="item">微信用户<span class="name">用户姓名</span>成功领取了188.88元！</div>
+						<div class="item">微信用户<span class="name">XXXXX</span>成功领取了188.88元！</div>
+						<div class="item">微信用户<span class="name">用户姓名用户姓名</span>成功领取了188.88元！</div>
+						<div class="item">微信用户<span class="name">用户姓名</span>成功领取了188.88元！</div>
+						<div class="item">微信用户<span class="name">XXXXX</span>成功领取了188.88元！</div>
+						<div class="item">微信用户<span class="name">用户姓名用户姓名</span>成功领取了188.88元！</div>
+						<div class="item">微信用户<span class="name">用户姓名</span>成功领取了188.88元！</div>
+						<div class="item">微信用户<span class="name">XXXXX</span>成功领取了188.88元！</div>
+						<div class="item">微信用户<span class="name">用户姓名用户姓名</span>成功领取了188.88元！</div>
+						<div class="item">微信用户<span class="name">用户姓名</span>成功领取了188.88元！</div>
+						<div class="item">微信用户<span class="name">XXXXX</span>成功领取了188.88元！</div>
+						<div class="item">微信用户<span class="name">用户姓名用户姓名</span>成功领取了188.88元！</div>
+						<div class="item">微信用户<span class="name">用户姓名</span>成功领取了188.88元！</div>
+						<div class="item">微信用户<span class="name">XXXXX</span>成功领取了188.88元！</div>
+					</div>
+				</div>
+			</div>
+			<!-- <a id="close"><img width="36" class="closeImg" src="img/colse.png"/></a> -->
+		</div>
+	</section>
+	<!--弹窗成功-->
+	<section class="popup" style="display: none;">
+		<div class="popupContent df fc jc ac">
+			<div class="popupContentImg">
+				<p class="c-red font-bold font16">登录成功</p>
+				<img class="m-t-b-10" width="45" height="45" src="img/pc/success-icon.png">
+				<p class="font14">
+					登录成功，马上开始检测，检测完成前请不要退出登录，检测完成后联系客服即可领取现金
+				</p>
+				<div class="df p-t-b-15">
+					<a href="#" class="orangeBtn-gradual blockBtn-5 flex-1 df ac jc">登录检测是否为一年以上微信</a>
+				</div>
+			</div>
+			<!-- <a id="close"><img width="36" class="closeImg" src="img/colse.png"/></a> -->
+		</div>
+	</section>
+	<!--弹窗失败-->
+	<section class="popup" style="display: none;">
+		<div class="popupContent df fc jc ac">
+			<div class="popupContentImg">
+				<p class="c-red font-bold">登录失败</p>
+				<img class="m-t-b-10" width="45" height="45" src="img/pc/fail-icon.png">
+				<div class="df p-t-b-15">
+					<a href="#" class="blockBtn-5 lineBtnOrange flex-1 df ac jc m-r-5">联系客服</a>
+					<a href="#" class="orangeBtn-gradual blockBtn-5 flex-1 df ac jc">重新登录</a>
+				</div>
+			</div>
+			<!-- <a id="close"><img width="36" class="closeImg" src="img/colse.png"/></a> -->
+		</div>
+	</section>
+	<!--登录二维码弹窗-->
+	<section class="popup" style="display: none;">
+		<div class="popupContent df fc jc ac">
+			<div class="popupContentImg">
+				<p class="c-red font-bold font16">扫码即可检测是否为一年以上微信</p>
+				<div class="m-t-b-10">
+					<img width="200" height="200" src="http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg">
+				</div>
+				<p>
+					请打开微信扫一扫，扫描上方二维码，点击登录即可
+				</p>
+			</div>
+			<a id="close"><img width="36" class="closeImg" src="img/colse.png"/></a>
+		</div>
+	</section>	
+	<!--登录二维码弹窗-->
+	<section class="popup" style="display:none;">
+		<div class="popupContent df fc jc ac">
+			<div class="popupContentImg">
+				<img class="m-t-b-10" width="45" height="45" src="img/pc/success-icon.png">
+				<p class="font14">
+					您已成功登录如您有多个账号，可以登录其他账号哦！
+				</p>
+				<div class="df p-t-b-15">
+					<a href="#" class="orangeBtn-gradual blockBtn-5 flex-1 df ac jc">登录其他账号</a>
+				</div>
+			</div>
+			<!-- <a id="close"><img width="36" class="closeImg" src="img/colse.png"/></a> -->
+		</div>
+	</section>	
+	<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$(".closeImg").on("click",function(){
+				$(".popup").hide();
+			})
+		});
+	</script>	
+	</body>
+</html>

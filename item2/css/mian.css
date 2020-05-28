@@ -1869,3 +1869,6 @@ to{transform: rotate(360deg)}
 	white-space:nowrap;
 	display: inline-block;
 }
+.profit .bgShow .border-bottom{
+	padding-bottom:0;
+}

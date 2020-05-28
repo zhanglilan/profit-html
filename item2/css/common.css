@@ -230,6 +230,9 @@ button{
 .font-500{
 	font-weight: 500;
 }
+.p10{
+	padding: 10px;
+}
 
 .p-b-45{
 	padding-bottom: 45px;
